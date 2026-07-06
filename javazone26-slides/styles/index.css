@@ -1,0 +1,32 @@
+/* ── Cards ─────────────────────────────────────────── */
+.card {
+  @apply bg-slate-800 border border-slate-700 rounded-xl p-5;
+}
+.card-i { @apply bg-indigo-950 border-indigo-800; }
+.card-o { @apply bg-orange-950 border-orange-800; }
+.card-g { @apply bg-green-950 border-green-800; }
+.card-r { @apply bg-red-950 border-red-800; }
+
+/* ── Label pill ────────────────────────────────────── */
+.label {
+  @apply inline-block px-4 py-1 rounded-full text-lg font-bold tracking-widest uppercase;
+}
+.label-sm {
+  @apply inline-block px-3 py-0.5 rounded-full text-xs font-bold tracking-widest uppercase;
+}
+.label-i { @apply bg-indigo-950 text-indigo-300 border border-indigo-800; }
+.label-o { @apply bg-orange-950 text-orange-300 border border-orange-800; }
+.label-g { @apply bg-green-950 text-green-300 border border-green-800; }
+.label-r { @apply bg-red-950 text-red-300 border border-red-800; }
+
+/* ── Pipeline step ─────────────────────────────────── */
+.step {
+  @apply flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold text-lg whitespace-nowrap;
+}
+.step-i { @apply bg-indigo-950 text-indigo-300 border border-indigo-700; }
+.step-o { @apply bg-orange-950 text-orange-300 border border-orange-700; }
+
+/* ── Hero text ─────────────────────────────────────── */
+.hero {
+  @apply text-5xl font-extrabold leading-tight;
+}
