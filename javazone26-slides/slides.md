@@ -103,9 +103,9 @@ De fleste her kjenner dette setuppet. Rask slide — det er bakgrunn for neste.
 layout: center
 ---
 
-<div class="flex flex-col gap-5 w-full mx-auto" style="max-width: 62rem">
+<div class="flex flex-col gap-6 w-full mx-auto" style="max-width: 62rem">
   <h2>Then AI Changed the Game</h2>
-  <div style="display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; gap: 0.5rem 0.75rem; align-items: center;">
+  <div class="flex items-center justify-center gap-3">
     <div class="step step-i">📥 Collect</div>
     <span class="text-slate-500 text-2xl">→</span>
     <div class="step step-i">⚙️ Transform</div>
@@ -113,28 +113,24 @@ layout: center
     <div class="step step-i">🗄️ Store</div>
     <span class="text-slate-500 text-2xl">→</span>
     <div class="step step-i">📈 Report</div>
-    <div v-click="1" class="text-center text-slate-500 text-xl">↓</div>
-    <div></div>
-    <div v-click="2" class="text-center text-slate-500 text-xl">↓</div>
-    <div></div>
-    <div v-click="3" class="text-center text-slate-500 text-xl">↓</div>
-    <div></div>
-    <div v-click="4" class="text-center text-slate-500 text-xl">↓</div>
-    <div v-click="1" class="step step-o">🔍 Search</div>
-    <div></div>
-    <div v-click="2" class="step step-o">💻 AI Coding</div>
-    <div></div>
-    <div v-click="3" class="step step-o">🤖 RAG</div>
-    <div></div>
-    <div v-click="4" class="step step-o">💬 Chat Agents</div>
   </div>
-  <div v-click="5" class="card card-o text-center">
+  <div v-click class="flex flex-col items-center gap-3">
+    <span class="text-slate-500 text-2xl">↓</span>
+    <p class="text-slate-400 text-sm">AI now shows up at every stage:</p>
+    <div class="flex items-center justify-center gap-3 flex-wrap">
+      <div class="step step-o">🔍 Search</div>
+      <div class="step step-o">💻 AI Coding</div>
+      <div class="step step-o">🤖 RAG (AI + your docs)</div>
+      <div class="step step-o">💬 Chat Agents</div>
+    </div>
+  </div>
+  <div v-click class="card card-o text-center">
     <p class="text-orange-200">An AI agent can now query your data in plain English. No SQL. No analyst in the loop.</p>
   </div>
 </div>
 
 <!--
-Klikk gjennom én kobling av gangen. Poenget: hvert steg i pipelinen har nå en AI-motpart.
+To klikk. Første: AI-motpartene dukker opp samlet. Andre: hovedpoenget. Ikke bruk tid på 1:1-kobling — poenget er at AI er overalt i pipelinen.
 -->
 
 ---
@@ -232,6 +228,9 @@ layout: center
       </div>
     </div>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 mt-3">
+    <em>Peng et al., MIT/Princeton RCT (arXiv:2302.06590)</em>: developers with GitHub Copilot completed tasks <span class="text-slate-300 font-medium">55.8% faster</span> than the control group.
+  </p>
 </div>
 
 <!--
@@ -280,7 +279,6 @@ class: text-center
   <div class="hero">
     The bottleneck is not<br>the <span class="text-green-400">chef</span>.<br>It's the <span class="text-red-400">ingredients</span>.
   </div>
-  <p class="text-slate-400 text-lg">Here's what that looks like in practice.</p>
 </div>
 
 <!--
@@ -299,12 +297,12 @@ layout: center
       AI doesn't <em>create</em> data quality problems.
     </p>
     <p class="text-indigo-200 text-lg mt-3">
-      It just surfaces the ones that were already there.
+      It shows you the ones that were already there.
     </p>
   </div>
-  <div v-click class="card text-center">
-    <p class="text-slate-300">That BI report you've trusted for three years? Probably wrong too. The AI will say so. Out loud. In a meeting.</p>
-  </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
+    <em>Sambasivan et al., CHI 2021 Best Paper — "Everyone wants to do the model work, not the data work"</em>: documented widespread "data cascades" in high-stakes AI projects — small data problems upstream cascading into bigger failures downstream.
+  </p>
 </div>
 
 <!--
@@ -316,9 +314,10 @@ layout: center
 ---
 
 <div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
+  <p class="text-slate-400 text-sm">Back to the ingredients.</p>
   <h2>The Agent Reads. It Doesn't Remember.</h2>
-  <p class="text-slate-300 text-lg">Agents navigate your schema the same way you'd search the web — by reading column names, table descriptions, and whatever docs exist. That's all they have.</p>
-  <p class="text-slate-400">No senior engineer to ask. No context. Just what's written down.</p>
+  <p class="text-slate-300 text-lg">The agent has no context. It reads column names, table descriptions, and whatever docs you've written.</p>
+  <p class="text-slate-400">No senior engineer to ask. No shared memory. Nothing implicit.</p>
   <div v-click class="flex gap-4">
     <div class="card card-r flex-1">
       <p class="text-xs text-slate-400 mb-3">Query: "show me churn rate"</p>
@@ -331,6 +330,9 @@ layout: center
       <p class="text-sm text-slate-400 mt-3">Unambiguous. Found immediately.</p>
     </div>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
+    <em>Spider 2.0 benchmark (Lei et al., ICLR 2025 Oral, arXiv:2411.07763)</em>: on realistic enterprise schemas, even <em>o1-preview</em> solves only <span class="text-slate-300 font-medium">21.3%</span> of natural-language SQL queries.
+  </p>
 </div>
 
 <!--
@@ -344,11 +346,14 @@ layout: center
 <div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
   <h2>It's Not the Name. It's the Gap.</h2>
   <div class="card card-o">
-    <p class="text-orange-200">The column name is just the symptom. Most schemas were built for machines and memorised by people — not written for something that reads like a human.</p>
+    <p class="text-orange-200">The column name is just the symptom. Most schemas were built for machines and memorised by the team who wrote them. Nobody wrote them for a stranger.</p>
   </div>
   <div v-click class="card card-i text-center">
     <p class="text-indigo-200">The schemas that worked because everyone knew the abbreviations? They don't work anymore. Someone needs to write it down.</p>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
+    <em>BIRD benchmark (Li et al., NeurIPS 2023, arXiv:2305.03111)</em>: on business SQL tasks, ChatGPT reaches <span class="text-slate-300 font-medium">40.08%</span> execution accuracy vs. human <span class="text-slate-300 font-medium">92.96%</span>. The gap is context, not capability.
+  </p>
 </div>
 
 <!--
@@ -368,6 +373,9 @@ class: text-center
   <div v-click class="card max-w-xl">
     <p class="text-slate-200 text-lg">A confident wrong answer is worse than no answer. And AI is always confident.</p>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 max-w-xl mt-2">
+    <em>Lin et al., TruthfulQA (ACL 2022, arXiv:2109.07958)</em>: larger LLMs are often <em>less</em> truthful, more confident in false claims.
+  </p>
 </div>
 
 <!--
@@ -398,28 +406,28 @@ layout: center
       <div class="text-3xl">💻</div>
       <div>
         <div class="font-bold text-slate-200">Coding</div>
-        <div class="text-sm text-slate-400">Pipelines, transformations, infrastructure — <span class="text-green-400">AI is taking over the grunt work</span></div>
+        <div class="text-sm text-slate-400">Pipelines, transformations, infrastructure. <span class="text-green-400">AI is taking most of it.</span></div>
       </div>
     </div>
     <div v-click class="card card-i flex items-center gap-4">
       <div class="text-3xl">🗂️</div>
       <div>
         <div class="font-bold text-indigo-200">Data Modeling & Semantic Design</div>
-        <div class="text-sm text-indigo-300">Naming things well, semantic layers, data contracts — <span class="font-semibold">AI cannot do this</span></div>
+        <div class="text-sm text-indigo-300">Naming things well, semantic layers, data contracts. <span class="font-semibold">AI can't do this on its own.</span></div>
       </div>
     </div>
     <div v-click class="card card-o flex items-center gap-4">
       <div class="text-3xl">🤝</div>
       <div>
         <div class="font-bold text-orange-200">Stakeholder Alignment</div>
-        <div class="text-sm text-orange-300">Getting three departments to agree on what "revenue" means — <span class="font-semibold">AI cannot do this either</span></div>
+        <div class="text-sm text-orange-300">Getting three departments to agree on what "revenue" means. <span class="font-semibold">AI definitely can't.</span></div>
       </div>
     </div>
   </div>
 </div>
 
 <!--
-Start med det grå kortet — det som automatiseres. Klikk deretter gjennom de to tingene AI ikke kan gjøre. Understreket "AI cannot do this" begge ganger.
+Start med det grå kortet — det som automatiseres. Klikk deretter gjennom de to tingene AI ikke kan gjøre.
 -->
 
 ---
@@ -445,8 +453,11 @@ layout: center
   </div>
   <div v-click class="card card-i text-center">
     <p class="font-bold text-indigo-200 mb-1">The data engineer's job:</p>
-    <p class="text-slate-300">Sit in that room, listen to all three teams, and come out with one definition everyone signs off on — so there's one version of revenue for everything, including the AI.</p>
+    <p class="text-slate-300">Get all three teams in a room. Come out with one definition. That's what everything runs on — reports, dashboards, and the AI.</p>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
+    <em>Saparina & Lapata, AMBROSIA (NeurIPS 2024 Datasets & Benchmarks Spotlight, arXiv:2406.19073)</em>: LLMs consistently fail to detect ambiguity in natural-language questions to databases — they confidently pick one interpretation and run.
+  </p>
 </div>
 
 <!--
@@ -489,67 +500,22 @@ Gå gjennom begge sider. Kryptisk, tvetydig, tribal — vs. lesbart, udiskutabel
 
 ---
 layout: center
+class: text-center
 ---
 
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>What Still Needs Humans</h2>
-  <p class="text-slate-400">Clean data isn't enough on its own. Three things still need a human attached.</p>
-  <div class="flex gap-4">
-    <div class="card flex-1 text-center">
-      <div class="text-4xl mb-3">🏛️</div>
-      <div class="font-bold text-slate-200">Governance</div>
-      <div class="text-sm text-slate-400 mt-2">Who owns what. Who can access what. Who is accountable.</div>
-    </div>
-    <div class="card flex-1 text-center">
-      <div class="text-4xl mb-3">✅</div>
-      <div class="font-bold text-slate-200">Quality Assurance</div>
-      <div class="text-sm text-slate-400 mt-2">Catching what's broken before the business does.</div>
-    </div>
-    <div class="card flex-1 text-center">
-      <div class="text-4xl mb-3">⚖️</div>
-      <div class="font-bold text-slate-200">Compliance</div>
-      <div class="text-sm text-slate-400 mt-2">GDPR, audit trails, data lineage. When something goes wrong, a regulator wants a name.</div>
-    </div>
+<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
+  <span class="label label-i">The Shift</span>
+  <div class="hero">
+    Less time writing<br>boilerplate.<br>
+    <span class="text-indigo-400">More time in rooms<br>where decisions get made.</span>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 max-w-xl mt-2">
+    <em>Autor & Thompson, "Expertise" (NBER Working Paper 33941, 2025)</em>: AI is remaking the expert–novice divide — routine execution moves down the ladder, judgment moves up.
+  </p>
 </div>
 
 <!--
-Dette er ansvarlighetsutfordringer, ikke tekniske. GDPR-bøter går til mennesker, ikke modeller.
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>How the Job is Shifting</h2>
-  <div class="grid grid-cols-2 gap-4">
-    <div class="card">
-      <p class="font-semibold text-slate-400 mb-3 text-sm">AI takes over</p>
-      <ul class="space-y-2 text-sm">
-        <li class="flex items-center gap-2 text-slate-400"><span>→</span> Writing boilerplate pipelines</li>
-        <li class="flex items-center gap-2 text-slate-400"><span>→</span> Translating queries to SQL</li>
-        <li class="flex items-center gap-2 text-slate-400"><span>→</span> Generating transformation code</li>
-        <li class="flex items-center gap-2 text-slate-400"><span>→</span> Basic documentation</li>
-      </ul>
-    </div>
-    <div class="card card-i">
-      <p class="font-semibold text-indigo-300 mb-3 text-sm">Data engineers own</p>
-      <ul class="space-y-2 text-sm">
-        <li class="flex items-center gap-2 text-indigo-200"><span class="text-indigo-400">→</span> Semantic modeling</li>
-        <li class="flex items-center gap-2 text-indigo-200"><span class="text-indigo-400">→</span> Business definition alignment</li>
-        <li class="flex items-center gap-2 text-indigo-200"><span class="text-indigo-400">→</span> Data architecture decisions</li>
-        <li class="flex items-center gap-2 text-indigo-200"><span class="text-indigo-400">→</span> Trust and governance</li>
-      </ul>
-    </div>
-  </div>
-  <div v-click class="card text-center">
-    <p class="text-slate-200">Less time writing boilerplate. More time in rooms where decisions get made.</p>
-  </div>
-</div>
-
-<!--
-La kontrasten lande. Jobben forsvinner ikke — den flyttes oppstrøms.
+Kort og direkte. La den lande. Poenget: dømmekraften er det som blir viktigere, ikke koden.
 -->
 
 ---
@@ -563,8 +529,11 @@ class: text-center
     Better AI means<br><span class="text-orange-400">higher demand</span><br>for good data.
   </div>
   <div v-click class="card max-w-xl">
-    <p class="text-slate-200">Better AI is a bigger amplifier. Good data gets amplified into good answers. Bad data gets amplified into confidently wrong ones.</p>
+    <p class="text-slate-200">AI is an amplifier. Good data becomes better answers. Bad data becomes bigger, more confident mistakes.</p>
   </div>
+  <p class="text-xs text-slate-500 text-center opacity-80 max-w-xl mt-2">
+    <em>Eloundou et al., "GPTs are GPTs" (Science 384, 2024)</em>: LLMs affect an estimated <span class="text-slate-300 font-medium">80%</span> of the US workforce — the bigger the amplifier, the more the underlying data matters.
+  </p>
 </div>
 
 <!--
@@ -613,13 +582,43 @@ layout: center
 ---
 
 <div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
+  <h2>What Still Needs Humans</h2>
+  <p class="text-slate-400">Clean data isn't enough on its own. Three things still need a human.</p>
+  <div class="flex gap-4">
+    <div class="card flex-1 text-center">
+      <div class="text-4xl mb-3">🏛️</div>
+      <div class="font-bold text-slate-200">Governance</div>
+      <div class="text-sm text-slate-400 mt-2">Who owns what. Who can access what. Who is accountable.</div>
+    </div>
+    <div class="card flex-1 text-center">
+      <div class="text-4xl mb-3">✅</div>
+      <div class="font-bold text-slate-200">Quality Assurance</div>
+      <div class="text-sm text-slate-400 mt-2">Catching what's broken before the business does.</div>
+    </div>
+    <div class="card flex-1 text-center">
+      <div class="text-4xl mb-3">⚖️</div>
+      <div class="font-bold text-slate-200">Compliance</div>
+      <div class="text-sm text-slate-400 mt-2">GDPR, audit trails, data lineage. When something goes wrong, a regulator wants a name.</div>
+    </div>
+  </div>
+</div>
+
+<!--
+Coda før Takeaway: minn om at disse tre tingene aldri automatiseres bort. Ansvarlighet, ikke teknikk. GDPR-bøter går til mennesker.
+-->
+
+---
+layout: center
+---
+
+<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
   <h2>Takeaway</h2>
   <div class="card card-i" style="padding: 2rem">
     <ul class="space-y-4 text-slate-200 text-lg">
       <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">1</span> AI exposes data quality problems that were always there</li>
       <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">2</span> The job shifts from writing code to deciding what data means</li>
-      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">3</span> Better AI increases the value — and demand — for clean data</li>
-      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">4</span> Data engineers don't disappear. They become the foundation everything else is built on.</li>
+      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">3</span> The better AI gets, the more clean data matters</li>
+      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">4</span> Data engineers don't disappear. They become what the AI depends on.</li>
     </ul>
   </div>
 </div>
