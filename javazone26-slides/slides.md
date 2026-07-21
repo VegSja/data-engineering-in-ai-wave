@@ -1,7 +1,7 @@
 ---
 theme: default
 colorSchema: dark
-title: How Data Engineering Survives the AI Wave
+title: AI is Easy, Data is Hard
 highlighter: shiki
 lineNumbers: false
 drawings:
@@ -18,119 +18,38 @@ layout: cover
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 w-full mx-auto text-center" style="max-width:52rem">
+<div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:60rem">
   <span class="label label-i">JavaZone 2026</span>
-  <h1 class="text-7xl font-extrabold leading-tight mb-6">
-    How Data Engineering<br><span class="text-indigo-400">Survives</span> the AI Wave
+  <h1 class="text-8xl font-extrabold leading-none tracking-tight mb-2">
+    AI is <span class="text-indigo-400">easy</span>.<br>
+    Data is <span class="text-orange-400">hard</span>.
   </h1>
-  <p class="text-slate-400 text-xl">Vegard Sjåvik · Data Engineer at Bekk</p>
+  <p class="text-slate-300 text-3xl">Why data engineers matter more than ever</p>
+  <p class="text-slate-500 text-lg mt-8">Vegard Sjåvik · Data Engineer at Bekk</p>
 </div>
 
 <!--
-Kort intro om deg selv. Sett forventningene: dette handler ikke om vi forsvinner — det handler om hva jobben blir. Si at du har en analogi på lur.
+Set the tone: this is not anti-AI. It's about what the actually hard part is.
 -->
 
 ---
-layout: center
----
 
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>What is a Data Engineer?</h2>
-  <div class="border-l-4 border-indigo-700 pl-6 text-slate-300 text-xl leading-relaxed italic my-6">
-    "Data engineers build and maintain the systems and infrastructure that allow organizations to collect, store, and analyze large amounts of data."
-  </div>
-  <p class="text-slate-400 text-sm">— IBM</p>
-</div>
-
-<!--
-Start med IBM-definisjonen. Gi den litt rom til å lande.
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>What does that actually mean?</h2>
-  <div class="flex gap-4">
-    <div class="card flex-1 text-center">
-      <div class="text-3xl mb-2">🏗️</div>
-      <div class="font-semibold text-slate-200">Build & Maintain</div>
-      <div class="text-sm text-slate-400 mt-1">Systems & infrastructure</div>
-    </div>
-    <div class="card flex-1 text-center">
-      <div class="text-3xl mb-2">🗄️</div>
-      <div class="font-semibold text-slate-200">Collect & Store</div>
-      <div class="text-sm text-slate-400 mt-1">Data at scale</div>
-    </div>
-    <div class="card flex-1 text-center">
-      <div class="text-3xl mb-2">📊</div>
-      <div class="font-semibold text-slate-200">Enable Analysis</div>
-      <div class="text-sm text-slate-400 mt-1">For the business</div>
+<div class="slide-body">
+  <div class="max-w-5xl">
+    <p class="text-orange-300 text-5xl font-bold leading-tight">"The model is rarely the bottleneck."</p>
+    <p class="text-slate-400 text-xl mt-8 max-w-3xl">— what I've learned across banking, humanitarian aid, and studying AI at NTNU.</p>
+    <div class="flex items-center gap-4 mt-12">
+      <carbon-user-avatar class="text-5xl text-indigo-300 flex-shrink-0" />
+      <div>
+        <div class="text-slate-100 text-xl font-semibold">Vegard Sjåvik</div>
+        <div class="text-slate-400">Data Engineer at Bekk</div>
+      </div>
     </div>
   </div>
 </div>
 
 <!--
-Rask gjennomgang. Kontekst, ikke argument.
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-5 w-full mx-auto" style="max-width: 60rem">
-  <h2>The Classic Data Pipeline</h2>
-  <div class="flex items-center justify-center gap-4" style="padding: 1.5rem 0">
-    <div class="step step-i"><span>📥</span> Collect</div>
-    <span class="text-slate-500 text-2xl">→</span>
-    <div class="step step-i"><span>⚙️</span> Transform</div>
-    <span class="text-slate-500 text-2xl">→</span>
-    <div class="step step-i"><span>🗄️</span> Store</div>
-    <span class="text-slate-500 text-2xl">→</span>
-    <div class="step step-i"><span>📈</span> Report</div>
-  </div>
-  <div class="card text-center">
-    <p class="text-slate-300">Engineers own the <span class="text-indigo-400 font-semibold">pipes</span>. Analysts own the <span class="text-indigo-400 font-semibold">outputs</span>. Everyone knows their lane.</p>
-  </div>
-</div>
-
-<!--
-De fleste her kjenner dette setuppet. Rask slide — det er bakgrunn for neste.
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-6 w-full mx-auto" style="max-width: 62rem">
-  <h2>Then AI Changed the Game</h2>
-  <div class="flex items-center justify-center gap-3">
-    <div class="step step-i">📥 Collect</div>
-    <span class="text-slate-500 text-2xl">→</span>
-    <div class="step step-i">⚙️ Transform</div>
-    <span class="text-slate-500 text-2xl">→</span>
-    <div class="step step-i">🗄️ Store</div>
-    <span class="text-slate-500 text-2xl">→</span>
-    <div class="step step-i">📈 Report</div>
-  </div>
-  <div v-click class="flex flex-col items-center gap-3">
-    <span class="text-slate-500 text-2xl">↓</span>
-    <p class="text-slate-400 text-sm">AI now shows up at every stage:</p>
-    <div class="flex items-center justify-center gap-3 flex-wrap">
-      <div class="step step-o">🔍 Search</div>
-      <div class="step step-o">💻 AI Coding</div>
-      <div class="step step-o">🤖 RAG (AI + your docs)</div>
-      <div class="step step-o">💬 Chat Agents</div>
-    </div>
-  </div>
-  <div v-click class="card card-o text-center">
-    <p class="text-orange-200">An AI agent can now query your data in plain English. No SQL. No analyst in the loop.</p>
-  </div>
-</div>
-
-<!--
-To klikk. Første: AI-motpartene dukker opp samlet. Andre: hovedpoenget. Ikke bruk tid på 1:1-kobling — poenget er at AI er overalt i pipelinen.
+Short bio. Land the thesis line hard — that is what this whole talk defends.
 -->
 
 ---
@@ -139,102 +58,140 @@ class: text-center
 ---
 
 <div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-i">The Question</span>
+  <span class="label label-o">The question every business is asking</span>
   <div class="hero">
-    If AI can write the code,<br>run the queries,<br>build the pipelines…
-  </div>
-  <div v-click class="hero text-indigo-400">
-    …what is left for<br>the data engineer?
+    "What can <span class="text-orange-400">AI</span><br>do for us?"
   </div>
 </div>
 
 <!--
-Ikke svar. La det henge.
+This is the question everyone is asking right now. Let it hang for a beat.
 -->
 
 ---
-layout: statement
----
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <p class="text-slate-400 text-2xl">Let me explain with an analogy.</p>
-  <div class="text-9xl">🥪</div>
-</div>
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 1 · The Promise</div>
 
-<!--
-Litt lettere tone. Analogien fungerer for alle i rommet.
--->
+## The upside is real
 
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>Think of it like making a sandwich</h2>
-  <div class="flex justify-center gap-6">
-    <div class="card flex flex-col items-center gap-3 flex-1 text-center">
-      <div class="text-5xl">🧀</div>
-      <div class="font-bold text-slate-200">Ingredients</div>
-      <div class="text-sm text-slate-400">Your data</div>
+<div class="slide-body">
+  <div class="grid grid-cols-3 gap-10 mt-4">
+    <div class="text-center">
+      <carbon-user-multiple class="text-8xl mb-6 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-3xl">Accessible</div>
+      <div class="text-slate-400 text-lg mt-3">Data opens up to the whole organisation</div>
     </div>
-    <div v-click class="card flex flex-col items-center gap-3 flex-1 text-center">
-      <div class="text-5xl">👨‍🍳</div>
-      <div class="font-bold text-slate-200">The Chef</div>
-      <div class="text-sm text-slate-400">The AI model</div>
+    <div v-click class="text-center">
+      <carbon-flash class="text-8xl mb-6 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-3xl">Fast</div>
+      <div class="text-slate-400 text-lg mt-3">Insights in seconds, not sprint cycles</div>
     </div>
-    <div v-click class="card flex flex-col items-center gap-3 flex-1 text-center">
-      <div class="text-5xl">🙋</div>
-      <div class="font-bold text-slate-200">The Customer</div>
-      <div class="text-sm text-slate-400">The business user</div>
+    <div v-click class="text-center">
+      <carbon-chat class="text-8xl mb-6 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-3xl">Self-serve</div>
+      <div class="text-slate-400 text-lg mt-3">Your CFO can just ask</div>
     </div>
-  </div>
-  <div v-click class="card text-center">
-    <p class="text-slate-300">The customer wants a <strong class="text-slate-100">great sandwich</strong>. The chef's job is to make one. But even the best chef can't fix bad <span class="text-orange-400 font-semibold">ingredients</span>.</p>
   </div>
 </div>
 
 <!--
-Bygg opp med klikk. Ikke rush forbi ingredienser — det er hele poenget.
+Be honest that this is real value. Don't dismiss the concept.
 -->
 
 ---
-layout: center
----
 
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>The Chef Problem is Solved</h2>
-  <div class="flex items-center gap-6">
-    <div class="card card-g flex-1 text-center" style="padding: 2rem">
-      <div class="text-5xl mb-3">👨‍🍳</div>
-      <div class="font-bold text-green-200 text-xl">The AI models</div>
-      <div class="text-sm text-green-300 mt-1">GPT-4o · Claude · Gemini</div>
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 1 · The Promise</div>
+
+## And every vendor is selling it to your CEO
+
+<div class="slide-body">
+  <p class="text-slate-300 text-2xl">Chat directly with your data warehouse. Every major platform ships one now.</p>
+
+  <div class="grid grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
+    <div class="card card-i text-center">
+      <carbon-snowflake class="text-6xl mb-3 mx-auto text-indigo-200" />
+      <div class="font-bold text-indigo-200 text-2xl">Snowflake</div>
+      <div class="text-slate-400 text-base mt-2">Cortex Analyst</div>
     </div>
-    <div class="flex flex-col gap-3 flex-1">
-      <div v-click class="card flex items-center gap-3">
-        <span class="text-green-400 text-xl">✓</span>
-        <span class="text-slate-200">Make sense of complex questions</span>
-      </div>
-      <div v-click class="card flex items-center gap-3">
-        <span class="text-green-400 text-xl">✓</span>
-        <span class="text-slate-200">Write and run code</span>
-      </div>
-      <div v-click class="card flex items-center gap-3">
-        <span class="text-green-400 text-xl">✓</span>
-        <span class="text-slate-200">Query your database in plain language</span>
-      </div>
-      <div v-click class="card flex items-center gap-3">
-        <span class="text-green-400 text-xl">✓</span>
-        <span class="text-slate-200">Explain results to non-technical users</span>
-      </div>
+    <div class="card card-o text-center">
+      <carbon-cube class="text-6xl mb-3 mx-auto text-orange-200" />
+      <div class="font-bold text-orange-200 text-2xl">Databricks</div>
+      <div class="text-slate-400 text-base mt-2">AI/BI Genie</div>
+    </div>
+    <div class="card card-g text-center">
+      <carbon-logo-google class="text-6xl mb-3 mx-auto text-green-200" />
+      <div class="font-bold text-green-200 text-2xl">BigQuery</div>
+      <div class="text-slate-400 text-base mt-2">Gemini in BigQuery</div>
     </div>
   </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 mt-3">
-    <em>Peng et al., MIT/Princeton RCT (arXiv:2302.06590)</em>: developers with GitHub Copilot completed tasks <span class="text-slate-300 font-medium">55.8% faster</span> than the control group.
+</div>
+
+<!--
+Real products. All the big players have one. This is not hypothetical anymore.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
+
+## Think of it like making a sandwich
+
+<div class="slide-body">
+  <div class="flex justify-center gap-16">
+    <div class="flex flex-col items-center gap-3 text-center">
+      <carbon-data-base class="text-8xl text-indigo-300" />
+      <div class="font-bold text-slate-100 text-2xl">Ingredients</div>
+      <div class="text-slate-400 text-lg">Your data</div>
+    </div>
+    <div class="flex flex-col items-center gap-3 text-center">
+      <carbon-bot class="text-8xl text-green-300" />
+      <div class="font-bold text-slate-100 text-2xl">The Chef</div>
+      <div class="text-slate-400 text-lg">The AI model</div>
+    </div>
+    <div class="flex flex-col items-center gap-3 text-center">
+      <carbon-user class="text-8xl text-orange-300" />
+      <div class="font-bold text-slate-100 text-2xl">The Customer</div>
+      <div class="text-slate-400 text-lg">The business user</div>
+    </div>
+  </div>
+
+  <p v-click class="text-slate-200 text-center text-2xl mt-16 max-w-3xl mx-auto">
+    Even the best chef can't fix <span class="text-orange-400 font-semibold">rotten ingredients</span>.
   </p>
 </div>
 
 <!--
-Dette er ikke fremtidsteknologi. Det er her nå. Kokkeproblemet er løst.
+Compressed sandwich metaphor. One slide, one payoff.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
+
+## The chef is good enough
+
+<div class="slide-body">
+  <div class="flex items-center gap-12">
+    <div class="text-center flex-shrink-0">
+      <carbon-bot class="text-9xl mb-4 mx-auto text-green-300" />
+      <div class="font-bold text-green-300 text-2xl">The AI models</div>
+      <div class="text-slate-400 mt-2">GPT-4o · Claude · Gemini</div>
+    </div>
+    <ul class="flex flex-col gap-4 text-slate-200 text-2xl flex-1">
+      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Turn "show me last quarter's churn" into working SQL</li>
+      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Explain why a number moved this week</li>
+      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Write the follow-up query you didn't think to ask</li>
+      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Turn a table of numbers into a paragraph a CFO understands</li>
+    </ul>
+  </div>
+
+  <p class="text-slate-300 text-center text-xl mt-10">
+    The hard engineering happened at OpenAI, Anthropic and Google. You get to consume it.
+  </p>
+</div>
+
+<!--
+The chef is not perfect, but good enough. The bottleneck has moved somewhere else.
 -->
 
 ---
@@ -242,260 +199,267 @@ layout: center
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
+<div class="flex flex-col items-center gap-8 max-w-4xl w-full mx-auto text-center">
   <span class="label label-r">So where does it break down?</span>
-  <div class="flex items-center justify-center gap-6">
-    <div class="card card-r text-center" style="padding: 1.5rem">
-      <div class="text-5xl">🗑️</div>
-      <div class="font-bold text-red-200 mt-3">Bad ingredients</div>
+  <div class="flex items-center justify-center gap-8">
+    <div class="text-center">
+      <carbon-warning-alt class="text-8xl mx-auto text-red-300" />
+      <div class="font-bold text-red-300 text-2xl mt-3">Bad ingredients</div>
     </div>
-    <span class="text-slate-500 text-3xl">+</span>
-    <div class="card card-g text-center" style="padding: 1.5rem">
-      <div class="text-5xl">👨‍🍳</div>
-      <div class="font-bold text-green-200 mt-3">Great chef</div>
+    <span class="text-slate-500 text-6xl">+</span>
+    <div class="text-center">
+      <carbon-bot class="text-8xl mx-auto text-green-300" />
+      <div class="font-bold text-green-300 text-2xl mt-3">Great chef</div>
     </div>
-    <span class="text-slate-500 text-3xl">=</span>
-    <div v-click class="card card-r text-center" style="padding: 1.5rem">
-      <div class="text-5xl">🤢</div>
-      <div class="font-bold text-red-200 mt-3">Bad sandwich</div>
+    <span class="text-slate-500 text-6xl">=</span>
+    <div v-click class="text-center">
+      <carbon-close-outline class="text-8xl mx-auto text-red-300" />
+      <div class="font-bold text-red-300 text-2xl mt-3">Bad sandwich</div>
     </div>
-  </div>
-  <div v-click class="card max-w-lg">
-    <p class="text-slate-200 text-lg font-semibold">A great chef can't fix rotten ingredients.</p>
   </div>
 </div>
 
-<!--
-La ligningen bygge seg opp. Vanligvis latter på den dårlige sandwichen. La kortkortet lande.
--->
-
----
-layout: center
-class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-r">The Real Problem</span>
-  <div class="hero">
-    The bottleneck is not<br>the <span class="text-green-400">chef</span>.<br>It's the <span class="text-red-400">ingredients</span>.
-  </div>
-</div>
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
 
-<!--
-Gjenta tesen tydelig. Gå rett videre til det konkrete eksempelet.
--->
+## The core insight
 
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>The Core Insight</h2>
-  <div class="card card-i text-center" style="padding: 2rem">
-    <div class="text-4xl mb-4">🔍</div>
-    <p class="text-2xl font-bold text-slate-100 leading-snug">
+<div class="slide-body">
+  <div class="text-center max-w-5xl mx-auto">
+    <carbon-search class="text-7xl mb-8 mx-auto text-indigo-300" />
+    <p class="text-4xl font-bold text-slate-100 leading-snug">
       AI doesn't <em>create</em> data quality problems.
     </p>
-    <p class="text-indigo-200 text-lg mt-3">
+    <p class="text-indigo-300 text-3xl mt-8 font-semibold leading-snug">
       It shows you the ones that were already there.
     </p>
   </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
-    <em>Sambasivan et al., CHI 2021 Best Paper — "Everyone wants to do the model work, not the data work"</em>: documented widespread "data cascades" in high-stakes AI projects — small data problems upstream cascading into bigger failures downstream.
-  </p>
 </div>
 
 <!--
-Pause etter klikket. Kjenningslatteren her er god — folk har vært i det møtet.
+The payoff. Let it land before moving into the concrete failure modes.
 -->
 
 ---
-layout: center
----
 
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <p class="text-slate-400 text-sm">Back to the ingredients.</p>
-  <h2>The Agent Reads. It Doesn't Remember.</h2>
-  <p class="text-slate-300 text-lg">The agent has no context. It reads column names, table descriptions, and whatever docs you've written.</p>
-  <p class="text-slate-400">No senior engineer to ask. No shared memory. Nothing implicit.</p>
-  <div v-click class="flex gap-4">
-    <div class="card card-r flex-1">
-      <p class="text-xs text-slate-400 mb-3">Query: "show me churn rate"</p>
-      <code class="text-red-300">usr_chn_flg_30d</code>
-      <p class="text-sm text-slate-400 mt-3">Could mean anything. The agent moves on.</p>
-    </div>
-    <div class="card card-g flex-1">
-      <p class="text-xs text-slate-400 mb-3">Query: "show me churn rate"</p>
-      <code class="text-green-300">is_churned_within_30_days</code>
-      <p class="text-sm text-slate-400 mt-3">Unambiguous. Found immediately.</p>
-    </div>
-  </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
-    <em>Spider 2.0 benchmark (Lei et al., ICLR 2025 Oral, arXiv:2411.07763)</em>: on realistic enterprise schemas, even <em>o1-preview</em> solves only <span class="text-slate-300 font-medium">21.3%</span> of natural-language SQL queries.
-  </p>
-</div>
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
 
-<!--
-Spør rommet: hvor mange skjemaer i din organisasjon ser ut som den røde kolonnen?
--->
+## So why do smart companies skip this?
 
----
-layout: center
----
+<div class="slide-body">
+  <p class="text-slate-400 text-xl">Three reasons — none of them stupid.</p>
 
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>It's Not the Name. It's the Gap.</h2>
-  <div class="card card-o">
-    <p class="text-orange-200">The column name is just the symptom. Most schemas were built for machines and memorised by the team who wrote them. Nobody wrote them for a stranger.</p>
-  </div>
-  <div v-click class="card card-i text-center">
-    <p class="text-indigo-200">The schemas that worked because everyone knew the abbreviations? They don't work anymore. Someone needs to write it down.</p>
-  </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
-    <em>BIRD benchmark (Li et al., NeurIPS 2023, arXiv:2305.03111)</em>: on business SQL tasks, ChatGPT reaches <span class="text-slate-300 font-medium">40.08%</span> execution accuracy vs. human <span class="text-slate-300 font-medium">92.96%</span>. The gap is context, not capability.
-  </p>
-</div>
-
-<!--
-Dette handler ikke egentlig om kolonnenavn. Det handler om all den implisitte kunnskapen som AI ikke har tilgang til.
--->
-
----
-layout: center
-class: text-center
----
-
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-r">The Consequence</span>
-  <div class="hero text-red-400">
-    Garbage in.<br>Garbage out.
-  </div>
-  <div v-click class="card max-w-xl">
-    <p class="text-slate-200 text-lg">A confident wrong answer is worse than no answer. And AI is always confident.</p>
-  </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 max-w-xl mt-2">
-    <em>Lin et al., TruthfulQA (ACL 2022, arXiv:2109.07958)</em>: larger LLMs are often <em>less</em> truthful, more confident in false claims.
-  </p>
-</div>
-
-<!--
-Ikke "AI fungerer ikke" — AI gir feil tall foran CFO-en din med full overbevisning. Det er et tillitsproblem.
--->
-
----
-layout: statement
----
-
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <p class="text-slate-400 text-2xl">So who fixes this?</p>
-  <div class="text-9xl">🔧</div>
-</div>
-
-<!--
-La spørsmålet henge. Publikum bør allerede tenke "data engineer".
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>The Data Engineer's Evolving Role</h2>
-  <div class="flex flex-col gap-3">
-    <div class="card flex items-center gap-4">
-      <div class="text-3xl">💻</div>
+  <div class="flex flex-col gap-6 mt-8 max-w-4xl mx-auto w-full">
+    <div class="check-item">
+      <span class="text-orange-400 font-bold text-4xl leading-none">1</span>
       <div>
-        <div class="font-bold text-slate-200">Coding</div>
-        <div class="text-sm text-slate-400">Pipelines, transformations, infrastructure. <span class="text-green-400">AI is taking most of it.</span></div>
+        <div class="font-semibold text-slate-100 text-xl">AI is sexy. Data cleanup isn't.</div>
+        <div class="text-slate-400 mt-1">Nobody gets promoted for renaming columns.</div>
       </div>
     </div>
-    <div v-click class="card card-i flex items-center gap-4">
-      <div class="text-3xl">🗂️</div>
+    <div v-click class="check-item">
+      <span class="text-orange-400 font-bold text-4xl leading-none">2</span>
       <div>
-        <div class="font-bold text-indigo-200">Data Modeling & Semantic Design</div>
-        <div class="text-sm text-indigo-300">Naming things well, semantic layers, data contracts. <span class="font-semibold">AI can't do this on its own.</span></div>
+        <div class="font-semibold text-slate-100 text-xl">Bad data fails quietly.</div>
+        <div class="text-slate-400 mt-1">Definitions don't crash — they produce plausible-looking wrong numbers.</div>
       </div>
     </div>
-    <div v-click class="card card-o flex items-center gap-4">
-      <div class="text-3xl">🤝</div>
+    <div v-click class="check-item">
+      <span class="text-orange-400 font-bold text-4xl leading-none">3</span>
       <div>
-        <div class="font-bold text-orange-200">Stakeholder Alignment</div>
-        <div class="text-sm text-orange-300">Getting three departments to agree on what "revenue" means. <span class="font-semibold">AI definitely can't.</span></div>
+        <div class="font-semibold text-slate-100 text-xl">Every vendor sells the sandwich.</div>
+        <div class="text-slate-400 mt-1">Nobody is selling you better ingredients.</div>
       </div>
     </div>
   </div>
 </div>
 
 <!--
-Start med det grå kortet — det som automatiseres. Klikk deretter gjennom de to tingene AI ikke kan gjøre.
+Reframe from "you're doing it wrong" to "of course you are — here's why the incentives are broken."
 -->
 
 ---
-layout: center
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
+
+## The same problem blocks dashboards too
+
+<div class="slide-body">
+  <p class="text-slate-300">Before you get to AI, ask: does your <span class="text-indigo-400 font-semibold">dashboard</span> even show numbers people believe?</p>
+
+  <div class="flex gap-10 mt-8 items-start">
+    <div class="flex-1">
+      <p class="text-xs text-slate-500 mb-2 uppercase tracking-wider">Column in the warehouse</p>
+      <code class="text-red-300 text-xl">usr_chn_flg_30d</code>
+      <p class="text-slate-400 mt-3">Nobody outside the original team knows what this means.</p>
+    </div>
+    <div class="flex-1">
+      <p class="text-xs text-slate-500 mb-2 uppercase tracking-wider">Same column, renamed</p>
+      <code class="text-green-300 text-xl">is_churned_within_30_days</code>
+      <p class="text-slate-400 mt-3">Any analyst — or AI — can pick it up.</p>
+    </div>
+  </div>
+
+  <p class="text-slate-300 mt-6">The AI failure mode and the dashboard failure mode are the same failure mode.</p>
+</div>
+
+<!--
+The same root problem stops both the dashboard and the AI agent.
+-->
+
 ---
 
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>The Real Work: Reconciling Definitions</h2>
-  <p class="text-slate-400 text-sm">Take any metric that matters. Ask three departments what it means.</p>
-  <div class="grid grid-cols-3 gap-3">
-    <div class="card">
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
+
+## It's not the name. It's the gap.
+
+<div class="slide-body">
+  <p class="text-slate-200 text-xl leading-relaxed max-w-2xl mx-auto">
+    The column name is just the symptom. Most schemas were built for machines and memorised by the team who wrote them. <span class="text-orange-300">Nobody wrote them for a stranger.</span>
+  </p>
+
+  <p v-click class="text-slate-200 text-xl leading-relaxed mt-8 max-w-2xl mx-auto">
+    Every new dashboard user is a stranger. Every AI agent is a stranger. <span class="text-indigo-300 font-semibold">Someone needs to write it down.</span>
+  </p>
+</div>
+
+<!--
+It's about implicit knowledge that nobody wrote down.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
+
+## Every company has this meeting
+
+<div class="slide-body">
+  <p class="text-slate-400">Take any metric that matters. Ask three departments what it means.</p>
+
+  <div class="grid grid-cols-3 gap-8 mt-8">
+    <div>
       <div class="label-sm label-i mb-3">Sales</div>
-      <p class="text-sm text-slate-300">"Revenue = invoiced amount, this quarter"</p>
+      <p class="text-slate-200">"Revenue = invoiced amount, this quarter"</p>
     </div>
-    <div class="card">
+    <div>
       <div class="label-sm label-o mb-3">Finance</div>
-      <p class="text-sm text-slate-300">"Revenue = recognised, net of refunds"</p>
+      <p class="text-slate-200">"Revenue = recognised, net of refunds"</p>
     </div>
-    <div class="card">
+    <div>
       <div class="label-sm label-g mb-3">Product</div>
-      <p class="text-sm text-slate-300">"Revenue = subscription MRR, annualised"</p>
+      <p class="text-slate-200">"Revenue = subscription MRR, annualised"</p>
     </div>
   </div>
-  <div v-click class="card card-i text-center">
-    <p class="font-bold text-indigo-200 mb-1">The data engineer's job:</p>
-    <p class="text-slate-300">Get all three teams in a room. Come out with one definition. That's what everything runs on — reports, dashboards, and the AI.</p>
+
+  <div v-click class="mt-10 max-w-2xl mx-auto text-center">
+    <p class="font-bold text-indigo-300 text-lg mb-1">Until this is resolved:</p>
+    <p class="text-slate-300">No dashboard is trustworthy. No AI answer is trustworthy. Every meeting starts with "whose number is right?"</p>
   </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 mt-2">
-    <em>Saparina & Lapata, AMBROSIA (NeurIPS 2024 Datasets & Benchmarks Spotlight, arXiv:2406.19073)</em>: LLMs consistently fail to detect ambiguity in natural-language questions to databases — they confidently pick one interpretation and run.
+</div>
+
+<!--
+Ask the room: who has been in the meeting where two reports showed different revenue?
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
+
+## Your data readiness scorecard
+
+<div class="slide-body">
+  <div class="flex flex-col gap-6 mt-10 max-w-4xl mx-auto w-full">
+    <div class="check-item">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
+        <div class="text-slate-400 mt-1">Column names + descriptions. <span class="text-slate-500 italic">— the <code>usr_chn_flg_30d</code> problem</span></div>
+      </div>
+    </div>
+    <div class="check-item just-unlocked">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
+        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">— the revenue problem</span></div>
+      </div>
+    </div>
+    <div class="check-item locked">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">3</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">The right people see the right data</div>
+        <div class="text-slate-400 mt-1">Access, lineage, and regulatory basis are clear.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
+
+## What still needs humans
+
+<div class="slide-body">
+  <p class="text-slate-400 text-xl">Even with clean data and good dashboards, three things stay human.</p>
+
+  <div class="grid grid-cols-3 gap-10 mt-16">
+    <div class="text-center">
+      <carbon-policy class="text-8xl mb-6 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-2xl">Governance</div>
+      <div class="text-slate-400 text-lg mt-3">Who owns what. Who can access what. Who is accountable.</div>
+    </div>
+    <div class="text-center">
+      <carbon-checkmark-outline class="text-8xl mb-6 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-2xl">Quality Assurance</div>
+      <div class="text-slate-400 text-lg mt-3">Catching what's broken before the business does.</div>
+    </div>
+    <div class="text-center">
+      <carbon-scales class="text-8xl mb-6 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-2xl">Compliance</div>
+      <div class="text-slate-400 text-lg mt-3">GDPR, audit trails, lineage. When something goes wrong, a regulator wants a name.</div>
+    </div>
+  </div>
+
+  <p class="text-slate-300 text-center text-xl mt-16 max-w-3xl mx-auto">
+    AI moves the bottleneck. It doesn't remove the humans who own it.
   </p>
 </div>
 
-<!--
-Spør rommet: hvem har vært i det møtet der to rapporter viste forskjellig omsetning? Ingen AI deltar i det møtet.
--->
-
----
-layout: two-cols-header
 ---
 
-## The Payoff: When Data is Done Right
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
 
-::left::
+## Your data readiness scorecard
 
-<div class="card card-r mt-4">
-  <div class="label-sm label-r mb-4">Before</div>
-  <div class="flex flex-col gap-2">
-    <div class="card text-sm flex items-center gap-2"><span class="text-red-400">✗</span> <code>rev_q_invoiced_amt</code></div>
-    <div class="card text-sm flex items-center gap-2"><span class="text-red-400">✗</span> <code>fin_net_rev_recog</code></div>
-    <div class="card text-sm flex items-center gap-2"><span class="text-red-400">✗</span> <code>prd_mrr_annualised</code></div>
-    <p class="text-xs text-slate-400 mt-2">Three tables. Three teams. Three different answers.</p>
-  </div>
-</div>
-
-::right::
-
-<div class="card card-g mt-4">
-  <div class="label-sm label-g mb-4">After</div>
-  <div class="flex flex-col gap-2">
-    <div class="card text-sm flex items-center gap-2"><span class="text-green-400">✓</span> <code>total_recognised_revenue</code></div>
-    <div class="card text-sm flex items-center gap-2"><span class="text-green-400">✓</span> <code>fct_revenue</code></div>
-    <div class="card text-sm flex items-center gap-2"><span class="text-green-400">✓</span> Documented definition</div>
-    <p class="text-xs text-slate-400 mt-2">One table. AI gets it right.</p>
+<div class="slide-body">
+  <div class="flex flex-col gap-6 mt-10 max-w-4xl mx-auto w-full">
+    <div class="check-item">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
+        <div class="text-slate-400 mt-1">Column names + descriptions. <span class="text-slate-500 italic">— the <code>usr_chn_flg_30d</code> problem</span></div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
+        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">— the revenue problem</span></div>
+      </div>
+    </div>
+    <div class="check-item just-unlocked">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">3</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">The right people see the right data</div>
+        <div class="text-slate-400 mt-1">Access, lineage, and regulatory basis are clear.</div>
+      </div>
+    </div>
   </div>
 </div>
 
 <!--
-Gå gjennom begge sider. Kryptisk, tvetydig, tribal — vs. lesbart, udiskutabelt, dokumentert. Transformasjonen er arbeidet.
+The final. Take the photo moment. Everything we diagnosed is now on one picture.
 -->
 
 ---
@@ -503,128 +467,51 @@ layout: center
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-i">The Shift</span>
-  <div class="hero">
-    Less time writing<br>boilerplate.<br>
-    <span class="text-indigo-400">More time in rooms<br>where decisions get made.</span>
-  </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 max-w-xl mt-2">
-    <em>Autor & Thompson, "Expertise" (NBER Working Paper 33941, 2025)</em>: AI is remaking the expert–novice divide — routine execution moves down the ladder, judgment moves up.
+<div class="flex flex-col items-center gap-6 max-w-4xl w-full mx-auto text-center px-8 py-8">
+  <span class="label label-r">Consequences of skipping step 1 and 2</span>
+  <p class="text-slate-100 text-3xl font-bold leading-snug mt-2">
+    A confident wrong answer in front of your CFO<br>
+    is worse than no answer.
   </p>
+  <p v-click class="text-orange-300 text-2xl mt-2">And AI is always confident.</p>
 </div>
 
-<!--
-Kort og direkte. La den lande. Poenget: dømmekraften er det som blir viktigere, ikke koden.
--->
-
----
-layout: center
-class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-o">The Paradox</span>
-  <div class="hero">
-    Better AI means<br><span class="text-orange-400">higher demand</span><br>for good data.
-  </div>
-  <div v-click class="card max-w-xl">
-    <p class="text-slate-200">AI is an amplifier. Good data becomes better answers. Bad data becomes bigger, more confident mistakes.</p>
-  </div>
-  <p class="text-xs text-slate-500 text-center opacity-80 max-w-xl mt-2">
-    <em>Eloundou et al., "GPTs are GPTs" (Science 384, 2024)</em>: LLMs affect an estimated <span class="text-slate-300 font-medium">80%</span> of the US workforce — the bigger the amplifier, the more the underlying data matters.
-  </p>
-</div>
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
 
-<!--
-Kontraintuitivt, men sant. Organisasjoner med rene data trekker lenger fremover — ikke bakover.
--->
+## What to do on Monday
 
----
-layout: center
-class: text-center
----
+<div class="slide-body">
+  <p class="text-slate-400 text-xl">Three concrete things. None of them require an AI budget.</p>
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-i">Revisiting the Question</span>
-  <div class="hero">
-    How does a data engineer<br>survive in 2026?
-  </div>
-</div>
-
-<!--
-Full sirkel. Publikum har alle brikkene nå. La dem tenke.
--->
-
----
-layout: center
-class: text-center
----
-
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <span class="label label-g">The Answer</span>
-  <div class="hero text-green-400">
-    By becoming<br>indispensable.
-  </div>
-  <div v-click class="card card-g text-left max-w-xl">
-    <p class="text-green-100 text-lg leading-relaxed">
-      AI is only as trustworthy as the data underneath it. Someone has to make that data trustworthy. <strong>That's the data engineer.</strong>
-    </p>
-  </div>
-</div>
-
-<!--
-Les kortet sakte. Det er den ene setningen folk skal ta med seg hjem.
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>What Still Needs Humans</h2>
-  <p class="text-slate-400">Clean data isn't enough on its own. Three things still need a human.</p>
-  <div class="flex gap-4">
-    <div class="card flex-1 text-center">
-      <div class="text-4xl mb-3">🏛️</div>
-      <div class="font-bold text-slate-200">Governance</div>
-      <div class="text-sm text-slate-400 mt-2">Who owns what. Who can access what. Who is accountable.</div>
+  <div class="flex flex-col gap-6 mt-8 max-w-4xl mx-auto w-full">
+    <div class="check-item">
+      <span class="text-orange-400 font-bold text-4xl leading-none">1</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">Run the stranger test</div>
+        <div class="text-slate-400 mt-1">Pick your most-used table. Hand the schema to someone who has never seen it. Ask them to explain three columns.</div>
+      </div>
     </div>
-    <div class="card flex-1 text-center">
-      <div class="text-4xl mb-3">✅</div>
-      <div class="font-bold text-slate-200">Quality Assurance</div>
-      <div class="text-sm text-slate-400 mt-2">Catching what's broken before the business does.</div>
+    <div class="check-item">
+      <span class="text-orange-400 font-bold text-4xl leading-none">2</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">Reconcile one metric</div>
+        <div class="text-slate-400 mt-1">Pick the KPI in your last board deck. Ask three teams to define it in one sentence. Write down the winner.</div>
+      </div>
     </div>
-    <div class="card flex-1 text-center">
-      <div class="text-4xl mb-3">⚖️</div>
-      <div class="font-bold text-slate-200">Compliance</div>
-      <div class="text-sm text-slate-400 mt-2">GDPR, audit trails, data lineage. When something goes wrong, a regulator wants a name.</div>
+    <div class="check-item">
+      <span class="text-orange-400 font-bold text-4xl leading-none">3</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">Audit one dashboard</div>
+        <div class="text-slate-400 mt-1">Trace every number back to its source. If you can't, neither can the AI you're about to plug in.</div>
+      </div>
     </div>
   </div>
 </div>
 
 <!--
-Coda før Takeaway: minn om at disse tre tingene aldri automatiseres bort. Ansvarlighet, ikke teknikk. GDPR-bøter går til mennesker.
--->
-
----
-layout: center
----
-
-<div class="flex flex-col gap-5 max-w-3xl w-full mx-auto">
-  <h2>Takeaway</h2>
-  <div class="card card-i" style="padding: 2rem">
-    <ul class="space-y-4 text-slate-200 text-lg">
-      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">1</span> AI exposes data quality problems that were always there</li>
-      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">2</span> The job shifts from writing code to deciding what data means</li>
-      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">3</span> The better AI gets, the more clean data matters</li>
-      <li v-click class="flex items-start gap-3"><span class="text-indigo-400 font-bold text-xl mt-0.5">4</span> Data engineers don't disappear. They become what the AI depends on.</li>
-    </ul>
-  </div>
-</div>
-
-<!--
-Gå gjennom hvert punkt. Punkt 4 er landingen — ikke rush det.
+Concrete Monday-morning actions. None require budget or headcount. This is what turns the talk into behaviour change.
 -->
 
 ---
@@ -633,7 +520,7 @@ class: text-center
 ---
 
 <div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <h2 class="text-6xl font-extrabold">Thank You</h2>
+  <h1 class="text-6xl font-extrabold">Thank You</h1>
   <p class="text-slate-400 text-xl">Questions?</p>
   <div class="flex items-center gap-8 mt-4">
     <a href="https://github.com/vegsja" target="_blank" class="flex items-center gap-2 text-slate-300 hover:text-white no-underline">
@@ -646,7 +533,3 @@ class: text-center
     </a>
   </div>
 </div>
-
-<!--
-Hold energien oppe. De beste samtalene skjer her.
--->

@@ -28,5 +28,33 @@
 
 /* ── Hero text ─────────────────────────────────────── */
 .hero {
-  @apply text-5xl font-extrabold leading-tight;
+  @apply text-8xl font-extrabold leading-none tracking-tight;
+}
+.hero-md {
+  @apply text-6xl font-extrabold leading-tight;
+}
+
+/* ── Default-layout slide: header at top, content centered in remaining space ── */
+.slidev-layout.default {
+  @apply flex flex-col;
+}
+.slidev-layout.default > h1:first-child,
+.slidev-layout.default > h2:first-child,
+.slidev-layout.default > h3:first-child {
+  @apply flex-shrink-0;
+}
+.slide-body {
+  @apply flex-1 flex flex-col justify-center;
+}
+
+/* ── Progressive checklist ─────────────────────────── */
+.check-item {
+  @apply flex items-start gap-5 transition-all duration-500;
+}
+.check-item.locked {
+  @apply opacity-30;
+  filter: blur(6px);
+}
+.check-item.just-unlocked {
+  @apply ring-2 ring-indigo-400/60 rounded-lg -m-2 p-2;
 }
