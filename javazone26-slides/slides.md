@@ -1,7 +1,7 @@
 ---
 theme: default
 colorSchema: dark
-title: AI is Easy, Data is Hard
+title: AI is Easy, Trustworthy Data is Hard
 highlighter: shiki
 lineNumbers: false
 drawings:
@@ -18,25 +18,25 @@ layout: cover
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:60rem">
+<div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:64rem">
   <span class="label label-i">JavaZone 2026</span>
   <h1 class="text-8xl font-extrabold leading-none tracking-tight mb-2">
     AI is <span class="text-indigo-400">easy</span>.<br>
-    Data is <span class="text-orange-400">hard</span>.
+    <span class="text-orange-400">Trustworthy</span> data is <span class="text-orange-400">hard</span>.
   </h1>
   <p class="text-slate-300 text-3xl">Why data engineers matter more than ever</p>
   <p class="text-slate-500 text-lg mt-8">Vegard Sjåvik · Data Engineer at Bekk</p>
 </div>
 
 <!--
-Set the tone: this is not anti-AI. It's about what the actually hard part is.
+Set the tone: this is not anti-AI. The operative word is TRUSTWORTHY. Say it out loud.
 -->
 
 ---
 
 <div class="slide-body">
   <div class="max-w-5xl">
-    <p class="text-orange-300 text-5xl font-bold leading-tight">"The model is rarely the bottleneck."</p>
+    <p class="text-orange-300 text-5xl font-bold leading-tight">"High-confidence visibility beats low-confidence intelligence."</p>
     <p class="text-slate-400 text-xl mt-8 max-w-3xl">— what I've learned across banking, humanitarian aid, and studying AI at NTNU.</p>
     <div class="flex items-center gap-4 mt-12">
       <carbon-user-avatar class="text-5xl text-indigo-300 flex-shrink-0" />
@@ -49,7 +49,7 @@ Set the tone: this is not anti-AI. It's about what the actually hard part is.
 </div>
 
 <!--
-Short bio. Land the thesis line hard — that is what this whole talk defends.
+This is the thesis line the whole talk defends. Repeat it verbatim at the end.
 -->
 
 ---
@@ -65,7 +65,7 @@ class: text-center
 </div>
 
 <!--
-This is the question everyone is asking right now. Let it hang for a beat.
+This is the question everyone is asking. Let it hang. Then in a few slides I'll offer a better one.
 -->
 
 ---
@@ -92,10 +92,14 @@ This is the question everyone is asking right now. Let it hang for a beat.
       <div class="text-slate-400 text-lg mt-3">Your CFO can just ask</div>
     </div>
   </div>
+
+  <p v-click class="text-slate-300 text-center text-lg mt-12 max-w-3xl mx-auto italic">
+    A PM pulls a cohort query in 30 seconds that used to be a two-week ticket. That is real.
+  </p>
 </div>
 
 <!--
-Be honest that this is real value. Don't dismiss the concept.
+Be honest: this is real value. Land one concrete example so it doesn't feel like performative balance.
 -->
 
 ---
@@ -127,7 +131,53 @@ Be honest that this is real value. Don't dismiss the concept.
 </div>
 
 <!--
-Real products. All the big players have one. This is not hypothetical anymore.
+Real products. All the big players. This is not hypothetical anymore.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center gap-8 max-w-4xl w-full mx-auto text-center">
+  <span class="label label-o">But here's a better question</span>
+  <div class="hero">
+    "Which <span class="text-indigo-400">KPI</span><br>can you <span class="text-indigo-400">trust</span> today?"
+  </div>
+  <p v-click class="text-slate-400 text-xl mt-6 max-w-2xl">
+    If you can't answer this one, the first question doesn't matter yet.
+  </p>
+</div>
+
+<!--
+The pivot. Mirror to slide 3. This is the hinge of the whole talk. Pause after it.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
+
+## A story from a bank
+
+<div class="slide-body">
+  <div class="max-w-3xl mx-auto">
+    <p class="text-slate-200 text-2xl leading-relaxed">
+      Two teams. Same customer. Different <span class="text-orange-400 font-semibold">churn number</span>.
+    </p>
+    <p v-click class="text-slate-300 text-xl mt-8 leading-relaxed">
+      Weeks of debugging. Models retrained. Dashboards rebuilt.
+    </p>
+    <p v-click class="text-slate-100 text-2xl mt-8 leading-relaxed">
+      Root cause: <span class="text-indigo-300">one column</span> nobody had written down what it meant.
+    </p>
+    <p v-click class="text-slate-400 text-lg mt-10 italic">
+      No AI would have saved us. AI would have picked a definition and answered with confidence.
+    </p>
+  </div>
+</div>
+
+<!--
+Spend the credibility from the bio. 30 seconds max. The point: this is not a hypothetical failure mode.
 -->
 
 ---
@@ -155,69 +205,15 @@ Real products. All the big players have one. This is not hypothetical anymore.
     </div>
   </div>
 
-  <p v-click class="text-slate-200 text-center text-2xl mt-16 max-w-3xl mx-auto">
+  <p v-click class="text-slate-200 text-center text-2xl mt-12 max-w-3xl mx-auto">
     Even the best chef can't fix <span class="text-orange-400 font-semibold">rotten ingredients</span>.
+    <span class="block text-slate-400 text-lg mt-4">The hard engineering happened at OpenAI, Anthropic, Google. The chef is good enough.</span>
   </p>
 </div>
 
 <!--
-Compressed sandwich metaphor. One slide, one payoff.
+Sandwich + "chef is good enough" collapsed to one slide. One idea, one slide.
 -->
-
----
-
-<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
-
-## The chef is good enough
-
-<div class="slide-body">
-  <div class="flex items-center gap-12">
-    <div class="text-center flex-shrink-0">
-      <carbon-bot class="text-9xl mb-4 mx-auto text-green-300" />
-      <div class="font-bold text-green-300 text-2xl">The AI models</div>
-      <div class="text-slate-400 mt-2">GPT-4o · Claude · Gemini</div>
-    </div>
-    <ul class="flex flex-col gap-4 text-slate-200 text-2xl flex-1">
-      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Turn "show me last quarter's churn" into working SQL</li>
-      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Explain why a number moved this week</li>
-      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Write the follow-up query you didn't think to ask</li>
-      <li v-click class="flex items-center gap-4"><carbon-checkmark class="text-green-400 text-3xl flex-shrink-0" /> Turn a table of numbers into a paragraph a CFO understands</li>
-    </ul>
-  </div>
-
-  <p class="text-slate-300 text-center text-xl mt-10">
-    The hard engineering happened at OpenAI, Anthropic and Google. You get to consume it.
-  </p>
-</div>
-
-<!--
-The chef is not perfect, but good enough. The bottleneck has moved somewhere else.
--->
-
----
-layout: center
-class: text-center
----
-
-<div class="flex flex-col items-center gap-8 max-w-4xl w-full mx-auto text-center">
-  <span class="label label-r">So where does it break down?</span>
-  <div class="flex items-center justify-center gap-8">
-    <div class="text-center">
-      <carbon-warning-alt class="text-8xl mx-auto text-red-300" />
-      <div class="font-bold text-red-300 text-2xl mt-3">Bad ingredients</div>
-    </div>
-    <span class="text-slate-500 text-6xl">+</span>
-    <div class="text-center">
-      <carbon-bot class="text-8xl mx-auto text-green-300" />
-      <div class="font-bold text-green-300 text-2xl mt-3">Great chef</div>
-    </div>
-    <span class="text-slate-500 text-6xl">=</span>
-    <div v-click class="text-center">
-      <carbon-close-outline class="text-8xl mx-auto text-red-300" />
-      <div class="font-bold text-red-300 text-2xl mt-3">Bad sandwich</div>
-    </div>
-  </div>
-</div>
 
 ---
 
@@ -238,7 +234,7 @@ class: text-center
 </div>
 
 <!--
-The payoff. Let it land before moving into the concrete failure modes.
+The payoff line. Let it land before moving into the concrete failure modes.
 -->
 
 ---
@@ -286,7 +282,7 @@ Reframe from "you're doing it wrong" to "of course you are — here's why the in
 ## The same problem blocks dashboards too
 
 <div class="slide-body">
-  <p class="text-slate-300">Before you get to AI, ask: does your <span class="text-indigo-400 font-semibold">dashboard</span> even show numbers people believe?</p>
+  <p class="text-slate-300">Before AI, ask: does your <span class="text-indigo-400 font-semibold">dashboard</span> even show numbers people believe?</p>
 
   <div class="flex gap-10 mt-8 items-start">
     <div class="flex-1">
@@ -301,36 +297,18 @@ Reframe from "you're doing it wrong" to "of course you are — here's why the in
     </div>
   </div>
 
-  <p class="text-slate-300 mt-6">The AI failure mode and the dashboard failure mode are the same failure mode.</p>
+  <p v-click class="text-slate-200 text-lg mt-10 max-w-3xl">
+    Schemas were built for machines and memorised by the team who wrote them. <span class="text-orange-300">Every new user is a stranger. Every AI agent is a stranger.</span> Someone needs to write it down.
+  </p>
 </div>
 
 <!--
-The same root problem stops both the dashboard and the AI agent.
+Merged usr_chn_flg + "it's the gap" — one point, one slide.
 -->
 
 ---
 
 <div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 2 · The Diagnosis</div>
-
-## It's not the name. It's the gap.
-
-<div class="slide-body">
-  <p class="text-slate-200 text-xl leading-relaxed max-w-2xl mx-auto">
-    The column name is just the symptom. Most schemas were built for machines and memorised by the team who wrote them. <span class="text-orange-300">Nobody wrote them for a stranger.</span>
-  </p>
-
-  <p v-click class="text-slate-200 text-xl leading-relaxed mt-8 max-w-2xl mx-auto">
-    Every new dashboard user is a stranger. Every AI agent is a stranger. <span class="text-indigo-300 font-semibold">Someone needs to write it down.</span>
-  </p>
-</div>
-
-<!--
-It's about implicit knowledge that nobody wrote down.
--->
-
----
-
-<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
 
 ## Every company has this meeting
 
@@ -363,118 +341,116 @@ Ask the room: who has been in the meeting where two reports showed different rev
 -->
 
 ---
-
-<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
-
-## Your data readiness scorecard
-
-<div class="slide-body">
-  <div class="flex flex-col gap-6 mt-10 max-w-4xl mx-auto w-full">
-    <div class="check-item">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
-      <div>
-        <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
-        <div class="text-slate-400 mt-1">Column names + descriptions. <span class="text-slate-500 italic">— the <code>usr_chn_flg_30d</code> problem</span></div>
-      </div>
-    </div>
-    <div class="check-item just-unlocked">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
-      <div>
-        <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
-        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">— the revenue problem</span></div>
-      </div>
-    </div>
-    <div class="check-item locked">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">3</span>
-      <div>
-        <div class="font-semibold text-slate-100 text-xl">The right people see the right data</div>
-        <div class="text-slate-400 mt-1">Access, lineage, and regulatory basis are clear.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
----
-
-<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
-
-## What still needs humans
-
-<div class="slide-body">
-  <p class="text-slate-400 text-xl">Even with clean data and good dashboards, three things stay human.</p>
-
-  <div class="grid grid-cols-3 gap-10 mt-16">
-    <div class="text-center">
-      <carbon-policy class="text-8xl mb-6 mx-auto text-indigo-300" />
-      <div class="font-bold text-slate-100 text-2xl">Governance</div>
-      <div class="text-slate-400 text-lg mt-3">Who owns what. Who can access what. Who is accountable.</div>
-    </div>
-    <div class="text-center">
-      <carbon-checkmark-outline class="text-8xl mb-6 mx-auto text-indigo-300" />
-      <div class="font-bold text-slate-100 text-2xl">Quality Assurance</div>
-      <div class="text-slate-400 text-lg mt-3">Catching what's broken before the business does.</div>
-    </div>
-    <div class="text-center">
-      <carbon-scales class="text-8xl mb-6 mx-auto text-indigo-300" />
-      <div class="font-bold text-slate-100 text-2xl">Compliance</div>
-      <div class="text-slate-400 text-lg mt-3">GDPR, audit trails, lineage. When something goes wrong, a regulator wants a name.</div>
-    </div>
-  </div>
-
-  <p class="text-slate-300 text-center text-xl mt-16 max-w-3xl mx-auto">
-    AI moves the bottleneck. It doesn't remove the humans who own it.
-  </p>
-</div>
-
----
-
-<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
-
-## Your data readiness scorecard
-
-<div class="slide-body">
-  <div class="flex flex-col gap-6 mt-10 max-w-4xl mx-auto w-full">
-    <div class="check-item">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
-      <div>
-        <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
-        <div class="text-slate-400 mt-1">Column names + descriptions. <span class="text-slate-500 italic">— the <code>usr_chn_flg_30d</code> problem</span></div>
-      </div>
-    </div>
-    <div class="check-item">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
-      <div>
-        <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
-        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">— the revenue problem</span></div>
-      </div>
-    </div>
-    <div class="check-item just-unlocked">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">3</span>
-      <div>
-        <div class="font-semibold text-slate-100 text-xl">The right people see the right data</div>
-        <div class="text-slate-400 mt-1">Access, lineage, and regulatory basis are clear.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--
-The final. Take the photo moment. Everything we diagnosed is now on one picture.
--->
-
----
 layout: center
 class: text-center
 ---
 
 <div class="flex flex-col items-center gap-6 max-w-4xl w-full mx-auto text-center px-8 py-8">
-  <span class="label label-r">Consequences of skipping step 1 and 2</span>
+  <span class="label label-r">The cost of skipping this</span>
   <p class="text-slate-100 text-3xl font-bold leading-snug mt-2">
     A confident wrong answer in front of your CFO<br>
     is worse than no answer.
   </p>
   <p v-click class="text-orange-300 text-2xl mt-2">And AI is always confident.</p>
 </div>
+
+<!--
+Emotional stakes BEFORE the prescription. This is why Part 3 matters.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
+
+## The order that actually works
+
+<div class="slide-body">
+  <div class="flex flex-col items-center gap-3 max-w-2xl mx-auto w-full mt-2">
+    <div class="step step-i w-full justify-center text-2xl py-4" style="max-width:22rem">
+      <carbon-bot /> AI on top
+    </div>
+    <carbon-arrow-up class="text-slate-500 text-2xl" />
+    <div class="step step-i w-full justify-center text-2xl py-4" style="max-width:28rem">
+      <carbon-dashboard /> Dashboards people trust
+    </div>
+    <carbon-arrow-up class="text-slate-500 text-2xl" />
+    <div class="step step-o w-full justify-center text-2xl py-4" style="max-width:34rem">
+      <carbon-ruler /> One agreed definition per metric
+    </div>
+    <carbon-arrow-up class="text-slate-500 text-2xl" />
+    <div class="step step-o w-full justify-center text-2xl py-4" style="max-width:40rem">
+      <carbon-data-base /> A schema a stranger can read
+    </div>
+  </div>
+
+  <p v-click class="text-slate-300 text-center text-xl mt-8 max-w-3xl mx-auto">
+    You can't skip a floor. AI on shaky floors falls faster than dashboards on shaky floors.
+  </p>
+</div>
+
+<!--
+The mental model the pitch promised. Build it bottom-up when presenting. This is the takeaway diagram.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
+
+## Your data readiness scorecard
+
+<div class="slide-body">
+  <div class="flex flex-col gap-6 mt-6 max-w-4xl mx-auto w-full">
+    <div class="check-item">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
+        <div class="text-slate-400 mt-1">Column names + descriptions. <span class="text-slate-500 italic">— the <code>usr_chn_flg_30d</code> problem</span></div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
+        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">— the revenue problem</span></div>
+      </div>
+    </div>
+    <div class="check-item">
+      <span class="text-indigo-400 font-bold text-4xl leading-none">3</span>
+      <div>
+        <div class="font-semibold text-slate-100 text-xl">Every number traces back to its source</div>
+        <div class="text-slate-400 mt-1">Lineage, ownership, access. If you can't trace it, you can't trust it.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+Shown ONCE. Item 3 rewritten so it maps 1:1 to Monday action 3.
+-->
+
+---
+
+<div class="absolute top-6 right-8 text-xs uppercase tracking-widest text-slate-500">Part 3 · What To Do</div>
+
+## This is data engineering
+
+<div class="slide-body">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-slate-200 text-2xl leading-relaxed">
+      Naming things. Modelling metrics. Writing contracts. Tracking lineage.
+    </p>
+    <p v-click class="text-indigo-300 text-2xl font-semibold mt-8 leading-relaxed">
+      This is not clerical work. It is the craft that decides whether the AI on top gives you an answer worth acting on.
+    </p>
+    <p v-click class="text-slate-400 text-lg mt-10 italic">
+      The vendors sold your CEO the chef. Someone still has to prep the kitchen.
+    </p>
+  </div>
+</div>
+
+<!--
+Land the title's claim explicitly. Data engineers own the floors under the AI.
+-->
 
 ---
 
@@ -483,7 +459,7 @@ class: text-center
 ## What to do on Monday
 
 <div class="slide-body">
-  <p class="text-slate-400 text-xl">Three concrete things. None of them require an AI budget.</p>
+  <p class="text-slate-400 text-xl">Three concrete things. None require an AI budget.</p>
 
   <div class="flex flex-col gap-6 mt-8 max-w-4xl mx-auto w-full">
     <div class="check-item">
@@ -496,14 +472,14 @@ class: text-center
     <div class="check-item">
       <span class="text-orange-400 font-bold text-4xl leading-none">2</span>
       <div>
-        <div class="font-semibold text-slate-100 text-xl">Reconcile one metric</div>
-        <div class="text-slate-400 mt-1">Pick the KPI in your last board deck. Ask three teams to define it in one sentence. Write down the winner.</div>
+        <div class="font-semibold text-slate-100 text-xl">Add a description to every column in one table</div>
+        <div class="text-slate-400 mt-1">dbt <code>description:</code>, a <code>COMMENT ON COLUMN</code>, a catalog entry — pick your tool. Ship it before lunch.</div>
       </div>
     </div>
     <div class="check-item">
       <span class="text-orange-400 font-bold text-4xl leading-none">3</span>
       <div>
-        <div class="font-semibold text-slate-100 text-xl">Audit one dashboard</div>
+        <div class="font-semibold text-slate-100 text-xl">Audit one dashboard end-to-end</div>
         <div class="text-slate-400 mt-1">Trace every number back to its source. If you can't, neither can the AI you're about to plug in.</div>
       </div>
     </div>
@@ -511,7 +487,28 @@ class: text-center
 </div>
 
 <!--
-Concrete Monday-morning actions. None require budget or headcount. This is what turns the talk into behaviour change.
+Action 2 is now technical — a data engineer can do it before lunch. Matches audience.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center gap-8 max-w-4xl w-full mx-auto text-center">
+  <span class="label label-i">Remember one thing</span>
+  <p class="text-orange-300 text-5xl font-extrabold leading-tight">
+    High-confidence visibility<br>
+    beats<br>
+    low-confidence intelligence.
+  </p>
+  <p v-click class="text-slate-300 text-2xl mt-6">
+    The AI you want is often a dashboard you'd believe.
+  </p>
+</div>
+
+<!--
+The closer. This is the line from the pitch. Say it, pause, then thank them.
 -->
 
 ---
