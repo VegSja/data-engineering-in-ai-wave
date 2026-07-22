@@ -497,7 +497,7 @@ class: text-center
 
 <div class="flex flex-col items-center gap-8 max-w-4xl w-full mx-auto text-center">
   <span class="label label-i">Remember one thing</span>
-  <p class="text-orange-300 text-5xl font-extrabold leading-tight">
+  <p class="text-orange-300 text-5xl font-extrabold" style="line-height:1.25">
     High-confidence visibility<br>
     beats<br>
     low-confidence intelligence.
