@@ -37,7 +37,7 @@ Set the tone: this is not anti-AI. The operative word is TRUSTWORTHY. Say it out
 <div class="slide-body">
   <div class="max-w-5xl">
     <p class="text-orange-300 text-5xl font-bold leading-tight">"High-confidence visibility beats low-confidence intelligence."</p>
-    <p class="text-slate-400 text-xl mt-8 max-w-3xl">— what I've learned across banking, humanitarian aid, and studying AI at NTNU.</p>
+    <p class="text-slate-400 text-xl mt-8 max-w-3xl">What I've learned across banking, humanitarian aid, and studying AI at NTNU.</p>
     <div class="flex items-center gap-4 mt-12">
       <carbon-user-avatar class="text-5xl text-indigo-300 flex-shrink-0" />
       <div>
@@ -57,9 +57,9 @@ layout: center
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
+<div class="flex flex-col items-center gap-8 w-full mx-auto text-center" style="max-width:60rem">
   <span class="label label-o">The question every business is asking</span>
-  <div class="hero">
+  <div class="hero leading-tight">
     "What can <span class="text-orange-400">AI</span><br>do for us?"
   </div>
 </div>
@@ -139,9 +139,9 @@ layout: center
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-8 max-w-4xl w-full mx-auto text-center">
+<div class="flex flex-col items-center gap-8 w-full mx-auto text-center" style="max-width:60rem">
   <span class="label label-o">But here's a better question</span>
-  <div class="hero">
+  <div class="hero leading-tight">
     "Which <span class="text-indigo-400">KPI</span><br>can you <span class="text-indigo-400">trust</span> today?"
   </div>
   <p v-click class="text-slate-400 text-xl mt-6 max-w-2xl">
@@ -244,7 +244,7 @@ The payoff line. Let it land before moving into the concrete failure modes.
 ## So why do smart companies skip this?
 
 <div class="slide-body">
-  <p class="text-slate-400 text-xl">Three reasons — none of them stupid.</p>
+  <p class="text-slate-400 text-xl">Three reasons. None of them stupid.</p>
 
   <div class="flex flex-col gap-6 mt-8 max-w-4xl mx-auto w-full">
     <div class="check-item">
@@ -258,7 +258,7 @@ The payoff line. Let it land before moving into the concrete failure modes.
       <span class="text-orange-400 font-bold text-4xl leading-none">2</span>
       <div>
         <div class="font-semibold text-slate-100 text-xl">Bad data fails quietly.</div>
-        <div class="text-slate-400 mt-1">Definitions don't crash — they produce plausible-looking wrong numbers.</div>
+        <div class="text-slate-400 mt-1">Definitions don't crash. They produce plausible-looking wrong numbers.</div>
       </div>
     </div>
     <div v-click class="check-item">
@@ -293,7 +293,7 @@ Reframe from "you're doing it wrong" to "of course you are — here's why the in
     <div class="flex-1">
       <p class="text-xs text-slate-500 mb-2 uppercase tracking-wider">Same column, renamed</p>
       <code class="text-green-300 text-xl">is_churned_within_30_days</code>
-      <p class="text-slate-400 mt-3">Any analyst — or AI — can pick it up.</p>
+      <p class="text-slate-400 mt-3">Any analyst, or AI, can pick it up.</p>
     </div>
   </div>
 
@@ -399,19 +399,19 @@ The mental model the pitch promised. Build it bottom-up when presenting. This is
 ## Your data readiness scorecard
 
 <div class="slide-body">
-  <div class="flex flex-col gap-6 mt-6 max-w-4xl mx-auto w-full">
+  <div class="flex flex-col gap-4 max-w-4xl mx-auto w-full">
     <div class="check-item">
       <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
       <div>
         <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
-        <div class="text-slate-400 mt-1">Column names + descriptions. <span class="text-slate-500 italic">— the <code>usr_chn_flg_30d</code> problem</span></div>
+        <div class="text-slate-400 mt-1">Column names and descriptions. <span class="text-slate-500 italic">(the <code>usr_chn_flg_30d</code> problem)</span></div>
       </div>
     </div>
     <div class="check-item">
       <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
       <div>
         <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
-        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">— the revenue problem</span></div>
+        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">(the revenue problem)</span></div>
       </div>
     </div>
     <div class="check-item">
@@ -459,28 +459,28 @@ Land the title's claim explicitly. Data engineers own the floors under the AI.
 ## What to do on Monday
 
 <div class="slide-body">
-  <p class="text-slate-400 text-xl">Three concrete things. None require an AI budget.</p>
+  <p class="text-slate-400 text-xl">Three concrete things. No AI budget required.</p>
 
-  <div class="flex flex-col gap-6 mt-8 max-w-4xl mx-auto w-full">
+  <div class="flex flex-col gap-5 mt-6 max-w-4xl mx-auto w-full">
     <div class="check-item">
       <span class="text-orange-400 font-bold text-4xl leading-none">1</span>
       <div>
         <div class="font-semibold text-slate-100 text-xl">Run the stranger test</div>
-        <div class="text-slate-400 mt-1">Pick your most-used table. Hand the schema to someone who has never seen it. Ask them to explain three columns.</div>
+        <div class="text-slate-400 mt-1">Hand your most-used schema to someone who's never seen it. Ask them to explain three columns.</div>
       </div>
     </div>
     <div class="check-item">
       <span class="text-orange-400 font-bold text-4xl leading-none">2</span>
       <div>
-        <div class="font-semibold text-slate-100 text-xl">Add a description to every column in one table</div>
-        <div class="text-slate-400 mt-1">dbt <code>description:</code>, a <code>COMMENT ON COLUMN</code>, a catalog entry — pick your tool. Ship it before lunch.</div>
+        <div class="font-semibold text-slate-100 text-xl">Describe every column in one table</div>
+        <div class="text-slate-400 mt-1">dbt <code>description:</code>, <code>COMMENT ON COLUMN</code>, catalog entry. Ship before lunch.</div>
       </div>
     </div>
     <div class="check-item">
       <span class="text-orange-400 font-bold text-4xl leading-none">3</span>
       <div>
         <div class="font-semibold text-slate-100 text-xl">Audit one dashboard end-to-end</div>
-        <div class="text-slate-400 mt-1">Trace every number back to its source. If you can't, neither can the AI you're about to plug in.</div>
+        <div class="text-slate-400 mt-1">Trace every number to its source. If you can't, neither can the AI.</div>
       </div>
     </div>
   </div>
@@ -516,8 +516,8 @@ layout: end
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-5 max-w-2xl w-full mx-auto text-center">
-  <h1 class="text-6xl font-extrabold">Thank You</h1>
+<div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:48rem">
+  <h1 class="text-7xl font-extrabold leading-tight">Thank You</h1>
   <p class="text-slate-400 text-xl">Questions?</p>
   <div class="flex items-center gap-8 mt-4">
     <a href="https://github.com/vegsja" target="_blank" class="flex items-center gap-2 text-slate-300 hover:text-white no-underline">
