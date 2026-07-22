@@ -36,7 +36,7 @@ Set the tone: this is not anti-AI. The operative word is TRUSTWORTHY. Say it out
 
 <div class="slide-body">
   <div class="max-w-5xl">
-    <p class="text-orange-300 text-5xl font-bold leading-tight">"High-confidence visibility beats low-confidence intelligence."</p>
+    <p class="text-orange-300 text-5xl font-bold" style="line-height:1.25">"High-confidence visibility beats low-confidence intelligence."</p>
     <p class="text-slate-400 text-xl mt-8 max-w-3xl">What I've learned across banking, humanitarian aid, and studying AI at NTNU.</p>
     <div class="flex items-center gap-4 mt-12">
       <carbon-user-avatar class="text-5xl text-indigo-300 flex-shrink-0" />
