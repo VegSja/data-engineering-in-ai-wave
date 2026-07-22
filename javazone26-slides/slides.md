@@ -365,26 +365,42 @@ Emotional stakes BEFORE the prescription. This is why Part 3 matters.
 ## The order that actually works
 
 <div class="slide-body">
-  <div class="flex flex-col items-center gap-3 max-w-2xl mx-auto w-full mt-2">
-    <div class="step step-i w-full justify-center text-2xl py-4" style="max-width:22rem">
-      <carbon-bot /> AI on top
+  <div class="flex items-center justify-center gap-3 max-w-6xl mx-auto w-full">
+    <div class="flex flex-col items-center gap-3 flex-1">
+      <div class="w-20 h-20 rounded-2xl bg-orange-950 border border-orange-800 flex items-center justify-center">
+        <carbon-data-base class="text-4xl text-orange-300" />
+      </div>
+      <div class="text-slate-200 text-base font-semibold text-center">Readable schema</div>
+      <div class="text-slate-500 text-xs uppercase tracking-widest">Foundation</div>
     </div>
-    <carbon-arrow-up class="text-slate-500 text-2xl" />
-    <div class="step step-i w-full justify-center text-2xl py-4" style="max-width:28rem">
-      <carbon-dashboard /> Dashboards people trust
+    <carbon-chevron-right class="text-slate-600 text-3xl flex-shrink-0" />
+    <div class="flex flex-col items-center gap-3 flex-1">
+      <div class="w-20 h-20 rounded-2xl bg-orange-950 border border-orange-800 flex items-center justify-center">
+        <carbon-ruler class="text-4xl text-orange-300" />
+      </div>
+      <div class="text-slate-200 text-base font-semibold text-center">Agreed metrics</div>
+      <div class="text-slate-500 text-xs uppercase tracking-widest">&nbsp;</div>
     </div>
-    <carbon-arrow-up class="text-slate-500 text-2xl" />
-    <div class="step step-o w-full justify-center text-2xl py-4" style="max-width:34rem">
-      <carbon-ruler /> One agreed definition per metric
+    <carbon-chevron-right class="text-slate-600 text-3xl flex-shrink-0" />
+    <div class="flex flex-col items-center gap-3 flex-1">
+      <div class="w-20 h-20 rounded-2xl bg-indigo-950 border border-indigo-800 flex items-center justify-center">
+        <carbon-dashboard class="text-4xl text-indigo-300" />
+      </div>
+      <div class="text-slate-200 text-base font-semibold text-center">Trusted dashboards</div>
+      <div class="text-slate-500 text-xs uppercase tracking-widest">&nbsp;</div>
     </div>
-    <carbon-arrow-up class="text-slate-500 text-2xl" />
-    <div class="step step-o w-full justify-center text-2xl py-4" style="max-width:40rem">
-      <carbon-data-base /> A schema a stranger can read
+    <carbon-chevron-right class="text-slate-600 text-3xl flex-shrink-0" />
+    <div class="flex flex-col items-center gap-3 flex-1">
+      <div class="w-20 h-20 rounded-2xl bg-indigo-950 border border-indigo-800 flex items-center justify-center">
+        <carbon-bot class="text-4xl text-indigo-300" />
+      </div>
+      <div class="text-slate-200 text-base font-semibold text-center">AI on top</div>
+      <div class="text-slate-500 text-xs uppercase tracking-widest">Capstone</div>
     </div>
   </div>
 
-  <p v-click class="text-slate-300 text-center text-xl mt-8 max-w-3xl mx-auto">
-    You can't skip a floor. AI on shaky floors falls faster than dashboards on shaky floors.
+  <p v-click class="text-slate-300 text-center text-xl mt-16 max-w-3xl mx-auto">
+    You can't skip a step. AI on shaky ground falls faster than dashboards on shaky ground.
   </p>
 </div>
 
