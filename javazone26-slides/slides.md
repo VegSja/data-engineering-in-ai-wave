@@ -453,11 +453,11 @@ Shown ONCE. Item 3 rewritten so it maps 1:1 to Monday action 3.
       <div class="font-bold text-slate-100 text-xl">Lineage</div>
     </div>
   </div>
-
-  <p v-click class="text-slate-300 text-center text-xl mt-32 max-w-5xl mx-auto italic">
-    The vendors sold your CEO the chef. Someone still has to prep the kitchen.
-  </p>
 </div>
+
+<p v-click class="absolute bottom-16 left-0 right-0 text-slate-300 text-center text-xl max-w-5xl mx-auto italic px-8">
+  The vendors sold your CEO the chef. Someone still has to prep the kitchen.
+</p>
 
 <!--
 Land the title's claim explicitly. Data engineers own the floors under the AI.
