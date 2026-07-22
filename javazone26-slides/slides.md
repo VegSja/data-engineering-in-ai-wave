@@ -347,7 +347,7 @@ class: text-center
 
 <div class="flex flex-col items-center gap-6 max-w-4xl w-full mx-auto text-center px-8 py-8">
   <span class="label label-r">The cost of skipping this</span>
-  <p class="text-slate-100 text-3xl font-bold leading-snug mt-2">
+  <p class="text-slate-100 text-3xl font-bold mt-2" style="line-height:1.5">
     A confident wrong answer in front of your CFO<br>
     is worse than no answer.
   </p>
