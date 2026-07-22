@@ -398,11 +398,11 @@ Emotional stakes BEFORE the prescription. This is why Part 3 matters.
       <div class="text-slate-500 text-xs uppercase tracking-widest">Capstone</div>
     </div>
   </div>
-
-  <p v-click class="text-slate-300 text-center text-xl mt-16 max-w-3xl mx-auto">
-    You can't skip a step. AI on shaky ground falls faster than dashboards on shaky ground.
-  </p>
 </div>
+
+<p v-click class="absolute bottom-16 left-0 right-0 text-slate-300 text-center text-xl max-w-3xl mx-auto italic px-8">
+  You can't skip a step. AI on shaky ground falls faster than dashboards on shaky ground.
+</p>
 
 <!--
 The mental model the pitch promised. Build it bottom-up when presenting. This is the takeaway diagram.
