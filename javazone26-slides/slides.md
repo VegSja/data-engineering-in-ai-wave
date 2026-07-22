@@ -57,9 +57,9 @@ layout: center
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-8 w-full mx-auto text-center" style="max-width:60rem">
+<div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:60rem">
   <span class="label label-o">The question every business is asking</span>
-  <div class="hero leading-tight">
+  <div class="text-7xl font-extrabold tracking-tight" style="line-height:1.15">
     "What can <span class="text-orange-400">AI</span><br>do for us?"
   </div>
 </div>
@@ -139,12 +139,12 @@ layout: center
 class: text-center
 ---
 
-<div class="flex flex-col items-center gap-8 w-full mx-auto text-center" style="max-width:60rem">
+<div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:60rem">
   <span class="label label-o">But here's a better question</span>
-  <div class="hero leading-tight">
+  <div class="text-7xl font-extrabold tracking-tight" style="line-height:1.15">
     "Which <span class="text-indigo-400">KPI</span><br>can you <span class="text-indigo-400">trust</span> today?"
   </div>
-  <p v-click class="text-slate-400 text-xl mt-6 max-w-2xl">
+  <p v-click class="text-slate-400 text-xl mt-4 max-w-2xl">
     If you can't answer this one, the first question doesn't matter yet.
   </p>
 </div>
@@ -399,26 +399,26 @@ The mental model the pitch promised. Build it bottom-up when presenting. This is
 ## Your data readiness scorecard
 
 <div class="slide-body">
-  <div class="flex flex-col gap-4 max-w-4xl mx-auto w-full">
+  <div class="flex flex-col gap-3 max-w-4xl mx-auto w-full">
     <div class="check-item">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">1</span>
+      <span class="text-indigo-400 font-bold text-3xl leading-none">1</span>
       <div>
-        <div class="font-semibold text-slate-100 text-xl">A stranger can read the schema</div>
-        <div class="text-slate-400 mt-1">Column names and descriptions. <span class="text-slate-500 italic">(the <code>usr_chn_flg_30d</code> problem)</span></div>
+        <div class="font-semibold text-slate-100 text-lg">A stranger can read the schema</div>
+        <div class="text-slate-400 text-sm mt-1">Column names and descriptions. <span class="text-slate-500 italic">(the <code>usr_chn_flg_30d</code> problem)</span></div>
       </div>
     </div>
     <div class="check-item">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">2</span>
+      <span class="text-indigo-400 font-bold text-3xl leading-none">2</span>
       <div>
-        <div class="font-semibold text-slate-100 text-xl">One definition per metric</div>
-        <div class="text-slate-400 mt-1">Written, findable, agreed. <span class="text-slate-500 italic">(the revenue problem)</span></div>
+        <div class="font-semibold text-slate-100 text-lg">One definition per metric</div>
+        <div class="text-slate-400 text-sm mt-1">Written, findable, agreed. <span class="text-slate-500 italic">(the revenue problem)</span></div>
       </div>
     </div>
     <div class="check-item">
-      <span class="text-indigo-400 font-bold text-4xl leading-none">3</span>
+      <span class="text-indigo-400 font-bold text-3xl leading-none">3</span>
       <div>
-        <div class="font-semibold text-slate-100 text-xl">Every number traces back to its source</div>
-        <div class="text-slate-400 mt-1">Lineage, ownership, access. If you can't trace it, you can't trust it.</div>
+        <div class="font-semibold text-slate-100 text-lg">Every number traces back to its source</div>
+        <div class="text-slate-400 text-sm mt-1">Lineage, ownership, access. If you can't trace it, you can't trust it.</div>
       </div>
     </div>
   </div>
@@ -517,7 +517,7 @@ class: text-center
 ---
 
 <div class="flex flex-col items-center gap-6 w-full mx-auto text-center" style="max-width:48rem">
-  <h1 class="text-7xl font-extrabold leading-tight">Thank You</h1>
+  <h1 class="text-6xl font-extrabold" style="line-height:1.2">Thank You</h1>
   <p class="text-slate-400 text-xl">Questions?</p>
   <div class="flex items-center gap-8 mt-4">
     <a href="https://github.com/vegsja" target="_blank" class="flex items-center gap-2 text-slate-300 hover:text-white no-underline">
