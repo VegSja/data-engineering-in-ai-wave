@@ -454,8 +454,8 @@ Shown ONCE. Item 3 rewritten so it maps 1:1 to Monday action 3.
     </div>
   </div>
 
-  <p v-click class="text-slate-300 text-center text-xl mt-16 max-w-3xl mx-auto italic">
-    The vendors sold your CEO the chef.<br>Someone still has to prep the kitchen.
+  <p v-click class="text-slate-300 text-center text-xl mt-32 max-w-5xl mx-auto italic">
+    The vendors sold your CEO the chef. Someone still has to prep the kitchen.
   </p>
 </div>
 
