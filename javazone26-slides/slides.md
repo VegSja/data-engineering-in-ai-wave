@@ -435,17 +435,28 @@ Shown ONCE. Item 3 rewritten so it maps 1:1 to Monday action 3.
 ## This is data engineering
 
 <div class="slide-body">
-  <div class="max-w-4xl mx-auto">
-    <p class="text-slate-200 text-2xl leading-relaxed">
-      Naming things. Modelling metrics. Writing contracts. Tracking lineage.
-    </p>
-    <p v-click class="text-indigo-300 text-2xl font-semibold mt-8 leading-relaxed">
-      This is not clerical work. It is the craft that decides whether the AI on top gives you an answer worth acting on.
-    </p>
-    <p v-click class="text-slate-400 text-lg mt-10 italic">
-      The vendors sold your CEO the chef. Someone still has to prep the kitchen.
-    </p>
+  <div class="grid grid-cols-4 gap-8 max-w-5xl mx-auto w-full">
+    <div class="text-center">
+      <carbon-tag class="text-7xl mb-4 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-xl">Naming</div>
+    </div>
+    <div class="text-center">
+      <carbon-model-alt class="text-7xl mb-4 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-xl">Modelling</div>
+    </div>
+    <div class="text-center">
+      <carbon-document class="text-7xl mb-4 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-xl">Contracts</div>
+    </div>
+    <div class="text-center">
+      <carbon-flow class="text-7xl mb-4 mx-auto text-indigo-300" />
+      <div class="font-bold text-slate-100 text-xl">Lineage</div>
+    </div>
   </div>
+
+  <p v-click class="text-slate-300 text-center text-xl mt-16 max-w-3xl mx-auto italic">
+    The vendors sold your CEO the chef.<br>Someone still has to prep the kitchen.
+  </p>
 </div>
 
 <!--
