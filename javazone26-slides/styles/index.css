@@ -18,6 +18,7 @@
 .label-o { @apply bg-orange-950 text-orange-300 border border-orange-800; }
 .label-g { @apply bg-green-950 text-green-300 border border-green-800; }
 .label-r { @apply bg-red-950 text-red-300 border border-red-800; }
+.label-p { @apply bg-purple-950 text-purple-300 border border-purple-800; }
 
 /* ── Pipeline step ─────────────────────────────────── */
 .step {
@@ -37,6 +38,7 @@
 /* ── Default-layout slide: header at top, content centered in remaining space ── */
 .slidev-layout.default {
   @apply flex flex-col;
+  padding-top: 3.5rem; /* clear the top progress bar */
 }
 .slidev-layout.default > h1:first-child,
 .slidev-layout.default > h2:first-child,
