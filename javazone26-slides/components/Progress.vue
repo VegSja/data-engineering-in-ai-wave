@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const props = defineProps<{ current: 1 | 2 | 3 }>()
+const props = defineProps<{
+  current: 1 | 2 | 3
+  pitfall?: 1 | 2 | 3
+}>()
 
 const parts = [
   { n: 1, label: 'AI-driven insights' },
@@ -23,10 +26,14 @@ const parts = [
           />
         </div>
         <span
-          class="text-[9px] uppercase tracking-widest transition-colors"
+          class="text-[9px] uppercase tracking-widest transition-colors flex items-center gap-2"
           :class="p.n === props.current ? 'text-indigo-300' : 'text-slate-600'"
         >
-          {{ p.n }} · {{ p.label }}
+          <span>{{ p.n }} · {{ p.label }}</span>
+          <span
+            v-if="p.n === 2 && props.current === 2 && props.pitfall"
+            class="text-orange-300 normal-case tracking-normal"
+          >— Pitfall {{ props.pitfall }} / 3</span>
         </span>
       </div>
     </div>
