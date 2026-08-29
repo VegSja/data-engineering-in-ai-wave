@@ -149,21 +149,21 @@ The hard engineering happened at OpenAI, Anthropic, and Google. The chef is basi
           <div class="label-sm label-g mb-4">June 2025</div>
           <carbon-datastore class="text-3xl text-green-300 mb-3" />
           <div class="text-slate-100 text-lg font-semibold mb-2">Foundations form</div>
-          <p class="text-slate-400 text-sm leading-relaxed">Snowflake + PowerBI. Transactions, accounts, users. Leadership is happy.</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Snowflake + PowerBI. Active users. Leadership is happy.</p>
         </div>
         <div v-click class="flex flex-col items-center text-center">
           <div class="w-5 h-5 rounded-full bg-orange-400 mt-6 mb-5 ring-4 ring-slate-900 shadow-lg shadow-orange-500/40"></div>
           <div class="label-sm label-o mb-4">August 2025</div>
           <carbon-warning-alt class="text-3xl text-orange-300 mb-3" />
-          <div class="text-slate-100 text-lg font-semibold mb-2">Collisions</div>
-          <p class="text-slate-400 text-sm leading-relaxed">Sales wants churn data. Requests start to pile up.</p>
+          <div class="text-slate-100 text-lg font-semibold mb-2">Slow downs</div>
+          <p class="text-slate-400 text-sm leading-relaxed">Requests start to pile up.</p>
         </div>
         <div v-click class="flex flex-col items-center text-center">
           <div class="w-5 h-5 rounded-full bg-red-400 mt-6 mb-5 ring-4 ring-slate-900 shadow-lg shadow-red-500/40"></div>
           <div class="label-sm label-r mb-4">December 2025</div>
           <carbon-bot class="text-3xl text-red-300 mb-3" />
           <div class="text-slate-100 text-lg font-semibold mb-2">Promise of AI</div>
-          <p class="text-slate-400 text-sm leading-relaxed">Team stalls under stakeholder load. Enter <span class="text-red-300">Cortex Analyst</span>.</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Team stalls under stakeholder load. Enter <span class="text-red-300">CoCo Analyst</span>.</p>
         </div>
       </div>
     </div>
@@ -256,7 +256,7 @@ The bigger point: the whole warehouse was built by a small team for that team. T
           <div class="w-5 h-5 rounded-full bg-orange-400 mt-6 mb-5 ring-4 ring-slate-900 shadow-lg shadow-orange-500/40"></div>
           <div class="label-sm label-o mb-4">+ 6 months</div>
           <div class="text-slate-100 text-xl font-semibold mb-2">Quiet drift</div>
-          <p class="text-slate-400 text-sm leading-relaxed">Customer team adds <span class="text-orange-300">"credit card transaction in last 45 days"</span>. Leadership keeps the old rule.</p>
+          <p class="text-slate-400 text-sm leading-relaxed">Marketing team adds <span class="text-orange-300">"Has been online in the last 10 days"</span> rule to Active Users</p>
         </div>
         <div v-click class="flex flex-col items-center text-center">
           <div class="w-5 h-5 rounded-full bg-red-400 mt-6 mb-5 ring-4 ring-slate-900 shadow-lg shadow-red-500/40"></div>
@@ -273,10 +273,6 @@ The bigger point: the whole warehouse was built by a small team for that team. T
     </div>
   </div>
 </div>
-
-<!--
-Real example from a bank. One metric — "active customer" — used both by leadership to steer the business and by the customer team to run activation campaigns. August: we agree on one shared definition. Six months later: the customer team quietly adds "credit card transaction in the last 45 days" to catch more customers; leadership keeps the original rule. Twelve months in: leadership sees 13k active customers, the customer team sees 55k. Same word, two numbers. Everyone in the room still thinks they're agreeing.
--->
 
 
 ---
