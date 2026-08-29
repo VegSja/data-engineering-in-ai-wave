@@ -28,6 +28,9 @@ jobs:
         run: npm run build -- --base /data-engineering-in-ai-wave/
         working-directory: javazone26-slides
 
+      - name: SPA fallback (copy index.html to 404.html)
+        run: cp javazone26-slides/dist/index.html javazone26-slides/dist/404.html
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
