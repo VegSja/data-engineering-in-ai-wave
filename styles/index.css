@@ -1,3 +1,8 @@
+/* ── Hide persistent nav HUD in play mode ──────────── */
+.slidev-nav-controls {
+  display: none !important;
+}
+
 /* ── Cards ─────────────────────────────────────────── */
 .card {
   @apply bg-slate-800 border border-slate-700 rounded-xl p-5;
