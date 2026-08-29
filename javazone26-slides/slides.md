@@ -7,6 +7,7 @@ lineNumbers: false
 drawings:
   persist: false
 transition: fade
+routerMode: hash
 mdc: true
 fonts:
   sans: Inter
