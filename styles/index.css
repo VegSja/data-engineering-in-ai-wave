@@ -1,5 +1,5 @@
 /* ── Hide persistent nav HUD in play mode ──────────── */
-.slidev-nav-controls {
+#page-root nav {
   display: none !important;
 }
 
