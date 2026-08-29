@@ -47,6 +47,33 @@ class: text-center
 
 <Progress :current="1" />
 
+## The low hanging fruit: AI Analyst
+
+<div class="slide-body">
+  <p class="text-slate-300 text-2xl">Chat directly with your data warehouse. Every major platform ships one now.</p>
+  <div class="grid grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
+    <div class="card card-i text-center">
+      <carbon-snowflake class="text-6xl mb-3 mx-auto text-indigo-200" />
+      <div class="font-bold text-indigo-200 text-2xl">Snowflake</div>
+        <div class="text-slate-400 text-base mt-2">CoCo Analyst</div>
+    </div>
+    <div class="card card-o text-center">
+      <carbon-cube class="text-6xl mb-3 mx-auto text-orange-200" />
+      <div class="font-bold text-orange-200 text-2xl">Databricks</div>
+      <div class="text-slate-400 text-base mt-2">AI/BI Genie</div>
+    </div>
+    <div class="card card-g text-center">
+      <carbon-logo-google class="text-6xl mb-3 mx-auto text-green-200" />
+      <div class="font-bold text-green-200 text-2xl">BigQuery</div>
+      <div class="text-slate-400 text-base mt-2">Gemini in BigQuery</div>
+    </div>
+  </div>
+</div>
+
+---
+
+<Progress :current="1" />
+
 ## The upside is real
 
 <div class="slide-body">
@@ -69,40 +96,11 @@ class: text-center
   </div>
 </div>
 
-
 ---
 
 <Progress :current="1" />
 
-## And every vendor is selling it to your CEO
-
-<div class="slide-body">
-  <p class="text-slate-300 text-2xl">Chat directly with your data warehouse. Every major platform ships one now.</p>
-  <div class="grid grid-cols-3 gap-8 mt-12 max-w-5xl mx-auto">
-    <div class="card card-i text-center">
-      <carbon-snowflake class="text-6xl mb-3 mx-auto text-indigo-200" />
-      <div class="font-bold text-indigo-200 text-2xl">Snowflake</div>
-      <div class="text-slate-400 text-base mt-2">Cortex Analyst</div>
-    </div>
-    <div class="card card-o text-center">
-      <carbon-cube class="text-6xl mb-3 mx-auto text-orange-200" />
-      <div class="font-bold text-orange-200 text-2xl">Databricks</div>
-      <div class="text-slate-400 text-base mt-2">AI/BI Genie</div>
-    </div>
-    <div class="card card-g text-center">
-      <carbon-logo-google class="text-6xl mb-3 mx-auto text-green-200" />
-      <div class="font-bold text-green-200 text-2xl">BigQuery</div>
-      <div class="text-slate-400 text-base mt-2">Gemini in BigQuery</div>
-    </div>
-  </div>
-</div>
-
-
----
-
-<Progress :current="1" />
-
-## Think of it like making a sandwich
+## How these solutions works under the hood is much like a sandwich store.
 
 <div class="slide-body">
   <div class="flex justify-center gap-16">
@@ -280,45 +278,6 @@ The bigger point: the whole warehouse was built by a small team for that team. T
 Real example from a bank. One metric — "active customer" — used both by leadership to steer the business and by the customer team to run activation campaigns. August: we agree on one shared definition. Six months later: the customer team quietly adds "credit card transaction in the last 45 days" to catch more customers; leadership keeps the original rule. Twelve months in: leadership sees 13k active customers, the customer team sees 55k. Same word, two numbers. Everyone in the room still thinks they're agreeing.
 -->
 
----
-
-
-<Progress :current="2" :pitfall="2" />
-
-## One definition. One owner. One place.
-
-<div class="slide-body">
-  <div class="grid grid-cols-4 gap-5 mt-6 max-w-6xl mx-auto">
-    <div class="p-6 rounded-2xl bg-slate-900 border border-indigo-800/50 hover:border-indigo-500/60 transition">
-      <carbon-document class="text-4xl text-indigo-300 mb-4" />
-      <div class="label-sm label-i mb-3">Definition</div>
-      <p class="text-slate-100 font-semibold text-lg mb-2">Written down.</p>
-      <p class="text-slate-400 text-sm leading-relaxed">In plain language, next to the data.</p>
-    </div>
-    <div v-click class="p-6 rounded-2xl bg-slate-900 border border-orange-800/50 hover:border-orange-500/60 transition">
-      <carbon-user-avatar class="text-4xl text-orange-300 mb-4" />
-      <div class="label-sm label-o mb-3">Owner</div>
-      <p class="text-slate-100 font-semibold text-lg mb-2">A name, not a team.</p>
-      <p class="text-slate-400 text-sm leading-relaxed">Someone who says yes or no when it needs to change.</p>
-    </div>
-    <div v-click class="p-6 rounded-2xl bg-slate-900 border border-purple-800/50 hover:border-purple-500/60 transition">
-      <carbon-group class="text-4xl text-purple-300 mb-4" />
-      <div class="label-sm label-p mb-3">Users</div>
-      <p class="text-slate-100 font-semibold text-lg mb-2">Who consumes it.</p>
-      <p class="text-slate-400 text-sm leading-relaxed">So you know who to notify when it changes.</p>
-    </div>
-    <div v-click class="p-6 rounded-2xl bg-slate-900 border border-green-800/50 hover:border-green-500/60 transition">
-      <carbon-location class="text-4xl text-green-300 mb-4" />
-      <div class="label-sm label-g mb-3">Place</div>
-      <p class="text-slate-100 font-semibold text-lg mb-2">One source of truth.</p>
-      <p class="text-slate-400 text-sm leading-relaxed">Every dashboard, query, and AI agent reads from the same spot.</p>
-    </div>
-  </div>
-</div>
-
-<!--
-The active-customer drift wasn't a math problem — it was a governance problem. The fix is four things: a written definition in plain language next to the data; a single named owner (not a team) who can say yes or no to changes; a known list of consumers so you can notify them when it moves; and one place every dashboard, query, and AI agent reads from.
--->
 
 ---
 
@@ -327,30 +286,16 @@ The active-customer drift wasn't a math problem — it was a governance problem.
 ## Pitfall 3: Lack of data quality checking
 
 <div class="slide-body">
-  <div class="grid grid-cols-2 gap-6 mt-6 max-w-6xl mx-auto">
-    <div class="p-7 rounded-2xl bg-slate-900 border border-indigo-800/50">
-      <div class="flex items-center gap-3 mb-5">
-        <carbon-machine-learning-model class="text-3xl text-indigo-300" />
-        <div class="label-sm label-i">What AI sees</div>
-      </div>
-      <ul class="text-slate-200 text-base space-y-3">
-        <li class="flex gap-3"><span class="text-indigo-400">▸</span> Schemas, types, freshness</li>
-        <li class="flex gap-3"><span class="text-indigo-400">▸</span> Null rates, duplicates, distributions</li>
-        <li class="flex gap-3"><span class="text-indigo-400">▸</span> Statistical anomalies</li>
-      </ul>
-      <p class="text-slate-500 text-sm mt-5 italic border-t border-slate-800 pt-4">Syntactically valid. Domain-blind.</p>
+  <div class="grid grid-cols-2 gap-8 mt-10 max-w-6xl mx-auto items-stretch">
+    <div class="p-8 rounded-2xl bg-slate-900 border border-indigo-800/50 text-center">
+      <carbon-checkmark-outline class="text-6xl text-indigo-300 mx-auto mb-5" />
+      <div class="text-slate-100 text-2xl font-semibold mb-3">AI catches broken data</div>
+      <p class="text-slate-400 text-base">Nulls, types, freshness, outliers</p>
     </div>
-    <div v-click class="p-7 rounded-2xl bg-slate-900 border border-orange-700/60">
-      <div class="flex items-center gap-3 mb-5">
-        <carbon-user-multiple class="text-3xl text-orange-300" />
-        <div class="label-sm label-o">What only a human knows</div>
-      </div>
-      <ul class="text-slate-200 text-base space-y-3">
-        <li class="flex gap-3"><span class="text-orange-400">▸</span> What the field <span class="text-orange-300 font-medium">means</span> this quarter</li>
-        <li class="flex gap-3"><span class="text-orange-400">▸</span> Which edge cases are real customers vs noise</li>
-        <li class="flex gap-3"><span class="text-orange-400">▸</span> When a "clean" number is telling a lie</li>
-      </ul>
-      <p class="text-slate-500 text-sm mt-5 italic border-t border-slate-800 pt-4">Context lives in people, not columns.</p>
+    <div v-click class="p-8 rounded-2xl bg-slate-900 border border-orange-700/60 text-center">
+      <carbon-warning-alt class="text-6xl text-orange-300 mx-auto mb-5" />
+      <div class="text-slate-100 text-2xl font-semibold mb-3">Only humans catch wrong data</div>
+      <p class="text-slate-400 text-base">A clean number telling a lie</p>
     </div>
   </div>
 </div>
@@ -451,24 +396,24 @@ class: text-center
       <div class="text-slate-200 text-base font-semibold text-center">Schema + Quality</div>
       <div class="text-slate-500 text-xs uppercase tracking-widest">Foundation</div>
     </div>
-    <carbon-chevron-right v-click class="text-slate-600 text-3xl flex-shrink-0" />
-    <div v-click class="flex flex-col items-center gap-3 flex-1">
+    <carbon-chevron-right v-click="1" class="text-slate-600 text-3xl flex-shrink-0" />
+    <div v-click="1" class="flex flex-col items-center gap-3 flex-1">
       <div class="w-20 h-20 rounded-2xl bg-orange-950 border border-orange-800 flex items-center justify-center">
         <carbon-ruler class="text-4xl text-orange-300" />
       </div>
       <div class="text-slate-200 text-base font-semibold text-center">Agreed metrics</div>
       <div class="text-slate-500 text-xs uppercase tracking-widest">&nbsp;</div>
     </div>
-    <carbon-chevron-right v-click class="text-slate-600 text-3xl flex-shrink-0" />
-    <div v-click class="flex flex-col items-center gap-3 flex-1">
+    <carbon-chevron-right v-click="2" class="text-slate-600 text-3xl flex-shrink-0" />
+    <div v-click="2" class="flex flex-col items-center gap-3 flex-1">
       <div class="w-20 h-20 rounded-2xl bg-indigo-950 border border-indigo-800 flex items-center justify-center">
         <carbon-dashboard class="text-4xl text-indigo-300" />
       </div>
       <div class="text-slate-200 text-base font-semibold text-center">Trusted dashboards</div>
       <div class="text-slate-500 text-xs uppercase tracking-widest">&nbsp;</div>
     </div>
-    <carbon-chevron-right v-click class="text-slate-600 text-3xl flex-shrink-0" />
-    <div v-click class="flex flex-col items-center gap-3 flex-1">
+    <carbon-chevron-right v-click="3" class="text-slate-600 text-3xl flex-shrink-0" />
+    <div v-click="3" class="flex flex-col items-center gap-3 flex-1">
       <div class="w-20 h-20 rounded-2xl bg-indigo-950 border border-indigo-800 flex items-center justify-center">
         <carbon-bot class="text-4xl text-indigo-300" />
       </div>
