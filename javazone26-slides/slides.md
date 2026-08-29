@@ -423,6 +423,7 @@ class: text-center
   </div>
 </div>
 
+
 <p v-click class="absolute bottom-16 left-0 right-0 text-slate-300 text-center text-xl max-w-3xl mx-auto italic px-8">
   You can't skip a step.
 </p>
