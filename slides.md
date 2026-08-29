@@ -2,7 +2,6 @@
 theme: default
 colorSchema: dark
 title: AI is Easy, Trustworthy Data is Hard
-routerMode: hash
 highlighter: shiki
 lineNumbers: false
 drawings:
