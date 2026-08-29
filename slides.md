@@ -176,6 +176,48 @@ This is a year in the life of a data team — and the moment AI walked in. Janua
 
 ---
 
+<Progress :current="2" />
+
+## The road ahead for our AI analyst
+
+<div class="slide-body">
+  <div class="w-full h-full flex items-center justify-center">
+    <div class="relative w-full max-h-[70vh]" style="aspect-ratio: 1000 / 420;">
+      <svg viewBox="0 0 1000 420" class="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M0,0 L10,5 L0,10 z" fill="#64748b" />
+          </marker>
+        </defs>
+        <path d="M 80 320 Q 170 240, 300 180 Q 450 110, 580 250 Q 720 360, 860 150 L 940 135"
+              fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="8 8"
+              marker-end="url(#arrow)" />
+        <circle cx="80" cy="320" r="26" fill="#1e293b" stroke="#f87171" stroke-width="3" />
+        <g>
+          <circle cx="300" cy="180" r="12" fill="#f97316" stroke="#0f172a" stroke-width="4" />
+          <text x="300" y="155" text-anchor="middle" font-size="6" fill="#fdba74" font-weight="600">Pitfall 1</text>
+        </g>
+        <g>
+          <circle cx="580" cy="250" r="12" fill="#f97316" stroke="#0f172a" stroke-width="4" />
+          <text x="580" y="278" text-anchor="middle" font-size="6" fill="#fdba74" font-weight="600">Pitfall 2</text>
+        </g>
+        <g>
+          <circle cx="860" cy="150" r="12" fill="#f97316" stroke="#0f172a" stroke-width="4" />
+          <text x="860" y="125" text-anchor="middle" font-size="6" fill="#fdba74" font-weight="600">Pitfall 3</text>
+        </g>
+      </svg>
+      <carbon-bot class="absolute text-red-300" style="left: 8%; top: 76.2%; transform: translate(-50%, -50%); font-size: 2rem;" />
+      <ph-coins class="absolute text-yellow-300" style="left: 97%; top: 30%; transform: translate(-50%, -50%); font-size: 2rem;" />
+    </div>
+  </div>
+</div>
+
+<!--
+Before we dive in, here's the map. Our AI analyst sets off full of promise — and hits three stops along the way. Each one is a pitfall we actually walked into. We're going to visit them in order.
+-->
+
+---
+
 <Progress :current="2" :pitfall="1" />
 
 ## Pitfall 1: The warehouse wasn't built to be read by strangers
