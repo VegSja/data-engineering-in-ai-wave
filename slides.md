@@ -491,10 +491,6 @@ Foundation first: schema and quality. Then agreed metrics on top of that. Then d
       <span class="text-indigo-400 font-bold text-3xl leading-none">3</span>
       <div class="font-semibold text-slate-100 text-lg">Does the data match your expectations?</div>
     </div>
-    <div class="check-item">
-      <span class="text-indigo-400 font-bold text-3xl leading-none">4</span>
-      <div class="font-semibold text-slate-100 text-lg">Can every number trace back to its source and its consumers?</div>
-    </div>
   </div>
 </div>
 
