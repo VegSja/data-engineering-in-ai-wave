@@ -362,40 +362,40 @@ A model will happily spot nulls, outliers, broken joins — the syntactic stuff.
 </div>
 
 
----
-
-<Progress :current="2" />
-
-## We end up in these situations when we don't understand data development processes
-
-<div class="slide-body">
-  <div class="max-w-6xl mx-auto w-full mt-4">
-  <div class="flex items-center justify-center gap-8 mb-10 text-sm">
-    <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-indigo-400"></div><span class="text-slate-300">Coding</span></div>
-    <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-purple-400"></div><span class="text-slate-300">Architecture</span></div>
-    <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-orange-400"></div><span class="text-slate-300">Stakeholder work</span></div>
-  </div>
-  <div class="flex flex-col gap-10">
-    <div>
-      <div class="text-slate-400 text-sm uppercase tracking-widest mb-3">Perceived</div>
-      <div class="flex h-20 rounded-xl overflow-hidden shadow-lg">
-        <div class="bg-indigo-500 flex items-center justify-center text-white font-bold text-xl" style="width:70%">Coding</div>
-        <div class="bg-purple-500 flex items-center justify-center text-white font-bold text-base" style="width:20%">Architecture</div>
-        <div class="bg-orange-500" style="width:10%"></div>
-      </div>
-    </div>
-    <div v-click="1">
-      <div class="text-slate-400 text-sm uppercase tracking-widest mb-3">Actual</div>
-      <div class="flex h-20 rounded-xl overflow-hidden shadow-lg">
-        <div class="bg-indigo-500" style="width:5%"></div>
-        <div class="bg-purple-500" style="width:25%"></div>
-        <div class="bg-orange-500 flex items-center justify-center text-white font-bold text-xl" style="width:70%">Stakeholder work</div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-
+<!-- --- -->
+<!---->
+<!-- <Progress :current="2" /> -->
+<!---->
+<!-- ## We end up in these situations when we don't understand data development processes -->
+<!---->
+<!-- <div class="slide-body"> -->
+<!--   <div class="max-w-6xl mx-auto w-full mt-4"> -->
+<!--   <div class="flex items-center justify-center gap-8 mb-10 text-sm"> -->
+<!--     <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-indigo-400"></div><span class="text-slate-300">Coding</span></div> -->
+<!--     <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-purple-400"></div><span class="text-slate-300">Architecture</span></div> -->
+<!--     <div class="flex items-center gap-2"><div class="w-3 h-3 rounded-sm bg-orange-400"></div><span class="text-slate-300">Stakeholder work</span></div> -->
+<!--   </div> -->
+<!--   <div class="flex flex-col gap-10"> -->
+<!--     <div> -->
+<!--       <div class="text-slate-400 text-sm uppercase tracking-widest mb-3">Perceived</div> -->
+<!--       <div class="flex h-20 rounded-xl overflow-hidden shadow-lg"> -->
+<!--         <div class="bg-indigo-500 flex items-center justify-center text-white font-bold text-xl" style="width:70%">Coding</div> -->
+<!--         <div class="bg-purple-500 flex items-center justify-center text-white font-bold text-base" style="width:20%">Architecture</div> -->
+<!--         <div class="bg-orange-500" style="width:10%"></div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div v-click="1"> -->
+<!--       <div class="text-slate-400 text-sm uppercase tracking-widest mb-3">Actual</div> -->
+<!--       <div class="flex h-20 rounded-xl overflow-hidden shadow-lg"> -->
+<!--         <div class="bg-indigo-500" style="width:5%"></div> -->
+<!--         <div class="bg-purple-500" style="width:25%"></div> -->
+<!--         <div class="bg-orange-500 flex items-center justify-center text-white font-bold text-xl" style="width:70%">Stakeholder work</div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--   </div> -->
+<!--   </div> -->
+<!-- </div> -->
+<!---->
 <!--
 Here's the punchline behind reason number one.
 
